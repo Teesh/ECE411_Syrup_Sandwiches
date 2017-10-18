@@ -1,0 +1,8 @@
+import lc3b_types::*;
+
+module add_ress
+(
+
+);
+
+endmodule : add_ress

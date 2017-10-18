@@ -1,0 +1,22 @@
+import lc3b_types::*;
+
+/*
+ * SEXT[offset-n << 1]
+ */
+module shift
+(
+    input lc3b_word in,
+	 input lc3b_word imm4,
+	 input logic bit5,
+	 input logic bit4
+);
+
+assign offset6_out = $signed({offset6,1'b0});
+assign offset9_out = $signed({offset9,1'b0});
+assign offset11_out = $signed({offset11,1'b0});
+assign imm5_out = $signed(imm5);
+assign imm4_out = $signed(imm4);
+assign trap8_out = {trap8,1'b0};
+assign off6_out = $signed(offset6);
+
+endmodule : shift

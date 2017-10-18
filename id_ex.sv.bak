@@ -1,0 +1,8 @@
+import lc3b_types::*;
+
+module id_ex
+(
+	input clk
+);
+
+endmodule : id_ex

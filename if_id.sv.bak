@@ -1,0 +1,8 @@
+import lc3b_types::*;
+
+module if_id
+(
+	input clk
+);
+
+endmodule : if_id

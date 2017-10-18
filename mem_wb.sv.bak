@@ -1,0 +1,8 @@
+import lc3b_types::*;
+
+module mem_wb
+(
+	input clk
+);
+
+endmodule : mem_wb

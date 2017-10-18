@@ -1,0 +1,13 @@
+import lc3b_types::*;
+
+module cache
+(
+	input lc3b_nzp a
+);
+
+always_comb
+begin
+
+end
+
+endmodule : cache

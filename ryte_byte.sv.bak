@@ -1,0 +1,25 @@
+import lc3b_types::*;
+
+module ryte_byte
+(
+	input mem_bus in,
+	input logic[3:0] offset,
+	input mem_byte_enable,
+	output mem_bus out
+);
+
+logic [3:0] byte_mask;
+
+always_comb
+begin
+	if(mem_byte_enable == 2'b00)
+		byte_mask = 16'h0000;
+	else if(mem_byte_enable == 2'b01)
+		byte_mask = 16'h00FF;
+	if(mem_byte_enable == 2'b10)
+		byte_mask = 16'hFF00;
+	if(mem_byte_enable == 2'b11)
+		byte_mask = 16'hFFFF;
+end
+
+endmodule : rtye_byte

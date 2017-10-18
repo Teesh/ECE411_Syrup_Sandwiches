@@ -1,0 +1,25 @@
+module nzp_comp (parameter width = 16)
+(
+	input [width-1:0] a,
+	input [width-1:0] b,
+	output n,z,p
+);
+
+always_comb
+begin
+	if(a < b) begin
+		n = 1
+		z = 0
+		p = 0
+	end
+	if(a = b) begin
+		n = 0
+		z = 1
+		p = 0
+	end
+	if(a > b) begin
+		n = 0
+		z = 0
+		p = 1
+	end
+end	

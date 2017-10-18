@@ -1,0 +1,115 @@
+import lc3b_types::*;
+
+module cpu
+(
+    input clk,
+
+    /* Memory signals */
+    input mem_resp,
+    input lc3b_word mem_rdata,
+    output mem_read,
+    output mem_write,
+    output lc3b_mem_wmask mem_byte_enable,
+    output lc3b_word mem_address,
+    output lc3b_word mem_wdata
+);
+
+lc3b_opcode opcode;
+logic load_pc;
+logic load_ir;
+logic load_regfile;
+logic load_mar;
+logic load_mdr;
+logic load_cc;
+logic [1:0] pcmux_sel;
+logic storemux_sel;
+logic [1:0] alumux_sel;
+logic [1:0] regfilemux_sel;
+logic marmux_sel;
+logic mdrmux_sel;
+lc3b_aluop aluop;
+logic branch_enable;
+logic immmux_sel;
+logic imm_bit;
+logic jmpmux_sel;
+logic lea2mux_sel;
+logic leamux_sel;
+logic bit5;
+logic bit11;
+logic jssr_en;
+logic jssr_sel;
+logic ldi_sel;
+logic bit0;
+logic stb_en;
+logic trap_en;
+/* Instantiate MP 0 top level blocks here */
+control control_block
+(
+	.clk,
+	.opcode(opcode),
+	.branch_enable(branch_enable),
+	.load_pc(load_pc),
+	.load_ir(load_ir),
+	.load_regfile(load_regfile),
+	.load_mar(load_mar),
+	.load_mdr(load_mdr),
+	.load_cc(load_cc),
+	.pcmux_sel(pcmux_sel),
+	.storemux_sel(storemux_sel),
+	.alumux_sel(alumux_sel),
+	.regfilemux_sel(regfilemux_sel),
+	.marmux_sel(marmux_sel),
+	.mdrmux_sel(mdrmux_sel),
+	.aluop(aluop),
+	.mem_resp(mem_resp),
+	.mem_read(mem_read),
+	.mem_write(mem_write),
+	.mem_byte_enable(mem_byte_enable),
+	.jmpmux_sel(jmpmux_sel),
+	.lea2mux_sel(lea2mux_sel),
+	.leamux_sel(leamux_sel),
+	.bit5(bit5),
+	.bit11(bit11),
+	.jssr_en(jssr_en),
+	.jssr_sel(jssr_sel),
+	.ldi_sel(ldi_sel),
+	.bit0(bit0),
+	.stb_en(stb_en),
+	.trap_en(trap_en)
+);
+
+datapath datapath_block
+(
+	.clk,
+	.mem_rdata(mem_rdata),
+	.load_pc(load_pc),
+	.load_ir(load_ir),
+	.load_regfile(load_regfile),
+	.load_mar(load_mar),
+	.load_mdr(load_mdr),
+	.load_cc(load_cc),
+	.pcmux_sel(pcmux_sel),
+	.storemux_sel(storemux_sel),
+	.alumux_sel(alumux_sel),
+	.regfilemux_sel(regfilemux_sel),
+	.marmux_sel(marmux_sel),
+	.mdrmux_sel(mdrmux_sel),
+	.aluop(aluop),
+	.mem_address(mem_address),
+	.mem_wdata(mem_wdata),
+	.branch_enable(branch_enable),
+	.opcode(opcode),
+	.jmpmux_sel(jmpmux_sel),
+	.lea2mux_sel(lea2mux_sel),
+	.leamux_sel(leamux_sel),
+	.bit5(bit5),
+	.bit11(bit11),
+	.jssr_en(jssr_en),
+	.jssr_sel(jssr_sel),
+	.ldi_sel(ldi_sel),
+	.bit0(bit0),
+	.stb_en(stb_en),
+	.trap_en(trap_en)
+);
+
+endmodule : cpu
