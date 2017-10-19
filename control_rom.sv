@@ -8,10 +8,8 @@ module control_rom
 
 always_comb
 begin
-	/* Default assignments */
 	ctrl.opcode = opcode;
-	ctrl.load_cc = 1’b0;
-	/* ... other defaults ... */
+	ctrl.load_cc = 1'b0;
 	
 	/* Assign control signals based on opcode */
 	case(opcode)
