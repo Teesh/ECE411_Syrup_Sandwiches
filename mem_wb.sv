@@ -5,32 +5,32 @@ module mem_wb
 	input clk
 );
 
-register PC_reg
+register #(.width(lc3b_word)) PC_reg
 (
 	.clk
 );
 
-register ALU_reg
+register #(.width(lc3b_word)) ALU_reg
 (
 	.clk
 );
 
-register addr_reg
+register #(.width(lc3b_word)) addr_reg
 (
 	.clk
 );
 
-register dest_reg
+register #(.width(lc3b_reg)) dest_reg
 (
 	.clk
 );
 
-register d_rdata_reg
+register #(.width(lc3b_word)) d_rdata_reg
 (
 	.clk
 );
 
-register LDB_reg
+register #(.width(lc3b_word)) LDB_reg
 (
 	.clk
 );

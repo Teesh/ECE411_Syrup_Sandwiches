@@ -5,32 +5,32 @@ module ex_mem
 	input clk
 );
 
-register PC_reg
+register #(.width(lc3b_word)) PC_reg
 (
 	.clk
 );
 
-register ALU_reg
+register #(.width(lc3b_word)) ALU_reg
 (
 	.clk
 );
 
-register SR2_reg
+register #(.width(lc3b_word)) SR2_reg
 (
 	.clk
 );
 
-register addr_reg
+register #(.width(lc3b_word)) addr_reg
 (
 	.clk
 );
 
-register dest_reg
+register #(.width(lc3b_reg)) dest_reg
 (
 	.clk
 );
 
-register trapvect8_reg
+register #(.width(8)) trapvect8_reg
 (
 	.clk
 );

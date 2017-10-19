@@ -5,57 +5,57 @@ module id_ex
 	input clk
 );
 
-register PC_reg
+register #(.width(lc3b_word)) PC_reg
 (
 	.clk
 );
 
-register SR1_reg
+register #(.width(lc3b_word)) SR1_reg
 (
 	.clk
 );
 
-register SR2_reg
+register #(.width(lc3b_word)) SR2_reg
 (
 	.clk
 );
 
-register imm4_reg
+register #(.width(lc3b_imm4)) imm4_reg
 (
 	.clk
 );
 
-register imm5_reg
+register #(.width(lc3b_imm5)) imm5_reg
 (
 	.clk
 );
 
-register adj6_reg
+register #(.width(6)) adj6_reg
 (
 	.clk
 );
 
-register adj9_reg
+register #(.width(9)) adj9_reg
 (
 	.clk
 );
 
-register adj11_reg
+register #(.width(11)) adj11_reg
 (
 	.clk
 );
 
-register offset6_reg
+register #(.width(6)) offset6_reg
 (
 	.clk
 );
 
-register dest_reg
+register #(.width(lc3b_reg)) dest_reg
 (
 	.clk
 );
 
-register trapvect8_reg
+register #(.width(8)) trapvect8_reg
 (
 	.clk
 );
