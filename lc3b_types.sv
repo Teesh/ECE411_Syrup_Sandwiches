@@ -15,6 +15,16 @@ typedef logic  [1:0] lc3b_mem_wmask;
 
 typedef logic	[127:0] mem_bus;
 
+typedef logic [15:0] lc3b_control_word;
+
+typedef struct packed {
+	lc3b_opcode opcode;
+	lc3b_aluop aluop;
+	logic load_cc;
+	logic load_regfile;
+	/* ... other signals ... */
+} lc3b_control_word;
+
 typedef enum bit [3:0] {
     op_add  = 4'b0001,
     op_and  = 4'b0101,

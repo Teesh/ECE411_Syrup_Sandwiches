@@ -1,5 +1,5 @@
 Flow report for mp3
-Thu Oct 19 18:13:25 2017
+Fri Oct 20 19:49:00 2017
 Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Flow Summary                                                                ;
 +-------------------------------+---------------------------------------------+
-; Flow Status                   ; Flow Failed - Thu Oct 19 18:13:25 2017      ;
+; Flow Status                   ; Flow Failed - Fri Oct 20 19:49:00 2017      ;
 ; Quartus II 32-bit Version     ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
 ; Revision Name                 ; mp3                                         ;
 ; Top-level Entity Name         ; mp3                                         ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/19/2017 18:13:25 ;
+; Start date & time ; 10/20/2017 19:48:59 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mp3                 ;
 +-------------------+---------------------+
@@ -77,14 +77,14 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 71094329865683.150845480502073        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 176231578740488.150854693913511       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mp3_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (SystemVerilog)       ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_FILE                  ; mp3_tb.sv                             ; --            ; --          ; mp3_tb         ;
-; EDA_TEST_BENCH_FILE                  ; physical_memory.sv                    ; --            ; --          ; mp3_tb         ;
+; EDA_TEST_BENCH_FILE                  ; magic_dual_port.sv                    ; --            ; --          ; mp3_tb         ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; mp3_tb                                ; --            ; --          ; mp3_tb         ;
 ; EDA_TEST_BENCH_NAME                  ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_RUN_SIM_FOR           ; 200 ns                                ; --            ; --          ; mp3_tb         ;
@@ -106,8 +106,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 381 MB              ; 00:00:00                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:00                           ;
+; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 397 MB              ; 00:00:01                           ;
+; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,7 +116,7 @@ applicable agreement for further details.
 +----------------------+------------------------------+--------------+--------------+----------------+
 ; Module Name          ; Machine Hostname             ; OS Name      ; OS Version   ; Processor type ;
 +----------------------+------------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis ; dcl-l416-14.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Analysis & Synthesis ; dcl-l520-22.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
 +----------------------+------------------------------+--------------+--------------+----------------+
 
 

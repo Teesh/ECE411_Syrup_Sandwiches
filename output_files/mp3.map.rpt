@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Thu Oct 19 18:13:25 2017
+Fri Oct 20 19:49:00 2017
 Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status   ; Failed - Thu Oct 19 18:13:25 2017           ;
+; Analysis & Synthesis Status   ; Failed - Fri Oct 20 19:49:00 2017           ;
 ; Quartus II 32-bit Version     ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
 ; Revision Name                 ; mp3                                         ;
 ; Top-level Entity Name         ; mp3                                         ;
@@ -166,13 +166,18 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Full Version
-    Info: Processing started: Thu Oct 19 18:13:24 2017
+    Info: Processing started: Fri Oct 20 19:48:59 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file magic_dual_port.sv
+    Info (12023): Found entity 1: magic_memory_dp
+Info (12021): Found 1 design units, including 1 entities, in source file adj.sv
+    Info (12023): Found entity 1: adj
 Info (12021): Found 1 design units, including 1 entities, in source file alu.sv
     Info (12023): Found entity 1: alu
 Info (12021): Found 1 design units, including 1 entities, in source file magic_memory.sv
     Info (12023): Found entity 1: magic_memory
+Warning (10275): Verilog HDL Module Instantiation warning at mp3_tb.sv(34): ignored dangling comma in List of Port Connections
 Info (12021): Found 1 design units, including 1 entities, in source file mp3_tb.sv
     Info (12023): Found entity 1: mp3_tb
 Info (12021): Found 1 design units, including 0 entities, in source file lc3b_types.sv
@@ -207,29 +212,40 @@ Info (12021): Found 1 design units, including 1 entities, in source file shift_e
     Info (12023): Found entity 1: shift_ext
 Info (12021): Found 1 design units, including 1 entities, in source file control_rom.sv
     Info (12023): Found entity 1: control_rom
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(23): port "clk" is not declared by module "plus2" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 23
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(28): port "clk" is not declared by module "mux4" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 28
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(50): port "clk" is not declared by module "mux2" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 50
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(55): port "clk" is not declared by module "mux2" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 55
-Error (10161): Verilog HDL error at control_rom.sv(7): object "lc3b_control_word" is not declared File: /home/bdamisc2/ece411/mp3/control_rom.sv Line: 7
-Error (10733): Verilog HDL error at control_rom.sv(11): opcode is not declared under this prefix File: /home/bdamisc2/ece411/mp3/control_rom.sv Line: 11
-Error (10733): Verilog HDL error at control_rom.sv(12): load_cc is not declared under this prefix File: /home/bdamisc2/ece411/mp3/control_rom.sv Line: 12
-Error (10733): Verilog HDL error at control_rom.sv(17): aluop is not declared under this prefix File: /home/bdamisc2/ece411/mp3/control_rom.sv Line: 17
-Error (10733): Verilog HDL error at control_rom.sv(21): aluop is not declared under this prefix File: /home/bdamisc2/ece411/mp3/control_rom.sv Line: 21
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(65): port "clk" is not declared by module "control_rom" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 65
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(83): port "clk" is not declared by module "alu" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 83
-Error (10932): SystemVerilog error at cpu.sv(88): can't resolve implicit port connection(s) to instance "alu_mux" without a module declaration or an extern equivalent File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 88
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(93): port "clk" is not declared by module "adder" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 93
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(98): port "clk" is not declared by module "mux2" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 98
-Error (10932): SystemVerilog error at cpu.sv(115): can't resolve implicit port connection(s) to instance "stb_shift_blk" without a module declaration or an extern equivalent File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 115
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(120): port "clk" is not declared by module "mux4" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 120
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(125): port "clk" is not declared by module "mux4" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 125
-Error (10932): SystemVerilog error at cpu.sv(130): can't resolve implicit port connection(s) to instance "ldb_shift_blk" without a module declaration or an extern equivalent File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 130
-Error (10284): Verilog HDL Module Instantiation error at cpu.sv(140): port "clk" is not declared by module "mux2" File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 140
-Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 19 errors, 0 warnings
-    Error: Peak virtual memory: 382 megabytes
-    Error: Processing ended: Thu Oct 19 18:13:25 2017
+Info (12021): Found 1 design units, including 1 entities, in source file mux8.sv
+    Info (12023): Found entity 1: mux8
+Info (12021): Found 1 design units, including 1 entities, in source file ldb_shift.sv
+    Info (12023): Found entity 1: ldb_shift
+Info (12021): Found 1 design units, including 1 entities, in source file stb_shift.sv
+    Info (12023): Found entity 1: stb_shift
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(21): created implicit net for "pmem_resp_a"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(22): created implicit net for "pmem_rdata_a"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(23): created implicit net for "pmem_read_a"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(24): created implicit net for "pmem_write_a"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(25): created implicit net for "pmem_address_a"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(26): created implicit net for "pmem_wdata_a"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(28): created implicit net for "pmem_resp_b"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(29): created implicit net for "pmem_rdata_b"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(30): created implicit net for "pmem_read_b"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(31): created implicit net for "pmem_write_b"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(32): created implicit net for "pmem_address_b"
+Warning (10236): Verilog HDL Implicit Net warning at mp3_tb.sv(33): created implicit net for "pmem_wdata_b"
+Warning (10236): Verilog HDL Implicit Net warning at cpu.sv(252): created implicit net for "pc_execute"
+Warning (10236): Verilog HDL Implicit Net warning at cpu.sv(273): created implicit net for "trapvect_execute"
+Warning (10236): Verilog HDL Implicit Net warning at cpu.sv(281): created implicit net for "trapvect_mem"
+Warning (10236): Verilog HDL Implicit Net warning at cpu.sv(357): created implicit net for "sr2_wb"
+Warning (10236): Verilog HDL Implicit Net warning at cpu.sv(362): created implicit net for "d_rdata_wb"
+Warning (12125): Using design file mp3.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: mp3
+Info (12127): Elaborating entity "mp3" for the top level hierarchy
+Info (12128): Elaborating entity "cpu" for hierarchy "cpu:mp3_cpu"
+Error (10928): SystemVerilog error at cpu.sv(182): packed array type cannot be assigned to enum type - enum target requires cast File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 182
+Error (10716): SystemVerilog error at cpu.sv(182): can't pass value from actual to formal input "opcode" with incompatible type File: /home/bdamisc2/ece411/mp3/cpu.sv Line: 182
+Error (12152): Can't elaborate user hierarchy "cpu:mp3_cpu" File: /home/bdamisc2/ece411/mp3/mp3.sv Line: 33
+Error: Quartus II 32-bit Analysis & Synthesis was unsuccessful. 3 errors, 19 warnings
+    Error: Peak virtual memory: 398 megabytes
+    Error: Processing ended: Fri Oct 20 19:49:00 2017
     Error: Elapsed time: 00:00:01
-    Error: Total CPU time (on all processors): 00:00:00
+    Error: Total CPU time (on all processors): 00:00:01
 
 
