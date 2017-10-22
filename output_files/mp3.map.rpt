@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mp3
-Sat Oct 21 19:11:13 2017
+Sun Oct 22 13:26:45 2017
 Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
@@ -63,47 +63,22 @@ Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
  55. Port Connectivity Checks: "mux2:dest_mux"
  56. Port Connectivity Checks: "mux8:data_mux"
  57. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:cword_reg"
- 58. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:LDB_reg"
- 59. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:d_rdata_reg"
- 60. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:dest_reg"
- 61. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:addr_reg"
- 62. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:ALU_reg"
- 63. Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:PC_reg"
- 64. Port Connectivity Checks: "mem_wb:mem_wb_pipe"
- 65. Port Connectivity Checks: "register:ldi_count"
- 66. Port Connectivity Checks: "mux4:addr_mux"
- 67. Port Connectivity Checks: "mux4:wdata_mux"
- 68. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:cword_reg"
- 69. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:trapvect8_reg"
- 70. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:dest_reg"
- 71. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:addr_reg"
- 72. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:SR2_reg"
- 73. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:ALU_reg"
- 74. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:PC_reg"
- 75. Port Connectivity Checks: "mux2:offset_mux"
- 76. Port Connectivity Checks: "mux8:alu_mux"
- 77. Port Connectivity Checks: "alu:alu"
- 78. Port Connectivity Checks: "id_ex:id_ex_pipe|register:cword_reg"
- 79. Port Connectivity Checks: "id_ex:id_ex_pipe|register:trapvect8_reg"
- 80. Port Connectivity Checks: "id_ex:id_ex_pipe|register:dest_reg"
- 81. Port Connectivity Checks: "id_ex:id_ex_pipe|register:offset6_reg"
- 82. Port Connectivity Checks: "id_ex:id_ex_pipe|register:adj11_reg"
- 83. Port Connectivity Checks: "id_ex:id_ex_pipe|register:adj9_reg"
- 84. Port Connectivity Checks: "id_ex:id_ex_pipe|register:adj6_reg"
- 85. Port Connectivity Checks: "id_ex:id_ex_pipe|register:imm5_reg"
- 86. Port Connectivity Checks: "id_ex:id_ex_pipe|register:imm4_reg"
- 87. Port Connectivity Checks: "id_ex:id_ex_pipe|register:SR2_reg"
- 88. Port Connectivity Checks: "id_ex:id_ex_pipe|register:SR1_reg"
- 89. Port Connectivity Checks: "id_ex:id_ex_pipe|register:PC_reg"
- 90. Port Connectivity Checks: "control_rom:control_rom_blk"
- 91. Port Connectivity Checks: "mux2:sr2_mux"
- 92. Port Connectivity Checks: "mux2:sr1_mux"
- 93. Port Connectivity Checks: "if_id:if_id_pipe|register:I_rdata"
- 94. Port Connectivity Checks: "if_id:if_id_pipe|register:PC_reg"
- 95. Port Connectivity Checks: "mux4:PC_mux"
- 96. Port Connectivity Checks: "masturgate:master_gater"
- 97. Elapsed Time Per Partition
- 98. Analysis & Synthesis Messages
+ 58. Port Connectivity Checks: "mem_wb:mem_wb_pipe"
+ 59. Port Connectivity Checks: "register:ldi_count"
+ 60. Port Connectivity Checks: "mux4:addr_mux"
+ 61. Port Connectivity Checks: "mux4:wdata_mux"
+ 62. Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:cword_reg"
+ 63. Port Connectivity Checks: "mux2:offset_mux"
+ 64. Port Connectivity Checks: "mux8:alu_mux"
+ 65. Port Connectivity Checks: "alu:alu"
+ 66. Port Connectivity Checks: "id_ex:id_ex_pipe|register:cword_reg"
+ 67. Port Connectivity Checks: "control_rom:control_rom_blk"
+ 68. Port Connectivity Checks: "mux2:sr2_mux"
+ 69. Port Connectivity Checks: "mux2:sr1_mux"
+ 70. Port Connectivity Checks: "mux4:PC_mux"
+ 71. Port Connectivity Checks: "masturgate:master_gater"
+ 72. Elapsed Time Per Partition
+ 73. Analysis & Synthesis Messages
 
 
 
@@ -129,16 +104,16 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                ;
 +-------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status   ; Successful - Sat Oct 21 19:11:13 2017       ;
+; Analysis & Synthesis Status   ; Successful - Sun Oct 22 13:26:45 2017       ;
 ; Quartus II 32-bit Version     ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
 ; Revision Name                 ; mp3                                         ;
 ; Top-level Entity Name         ; cpu                                         ;
 ; Family                        ; Stratix III                                 ;
 ; Logic utilization             ; N/A                                         ;
-;     Combinational ALUTs       ; 15                                          ;
+;     Combinational ALUTs       ; 160                                         ;
 ;     Memory ALUTs              ; 0                                           ;
-;     Dedicated logic registers ; 15                                          ;
-; Total registers               ; 15                                          ;
+;     Dedicated logic registers ; 338                                         ;
+; Total registers               ; 338                                         ;
 ; Total pins                    ; 103                                         ;
 ; Total virtual pins            ; 0                                           ;
 ; Total block memory bits       ; 0                                           ;
@@ -289,34 +264,34 @@ applicable agreement for further details.
 +-----------------------------------------------+-----------+
 ; Resource                                      ; Usage     ;
 +-----------------------------------------------+-----------+
-; Estimated ALUTs Used                          ; 15        ;
-;     -- Combinational ALUTs                    ; 15        ;
+; Estimated ALUTs Used                          ; 160       ;
+;     -- Combinational ALUTs                    ; 160       ;
 ;     -- Memory ALUTs                           ; 0         ;
 ;     -- LUT_REGs                               ; 0         ;
-; Dedicated logic registers                     ; 15        ;
+; Dedicated logic registers                     ; 338       ;
 ;                                               ;           ;
-; Estimated ALUTs Unavailable                   ; 0         ;
-;     -- Due to unpartnered combinational logic ; 0         ;
+; Estimated ALUTs Unavailable                   ; 60        ;
+;     -- Due to unpartnered combinational logic ; 60        ;
 ;     -- Due to Memory ALUTs                    ; 0         ;
 ;                                               ;           ;
-; Total combinational functions                 ; 15        ;
+; Total combinational functions                 ; 160       ;
 ; Combinational ALUT usage by number of inputs  ;           ;
-;     -- 7 input functions                      ; 0         ;
-;     -- 6 input functions                      ; 0         ;
-;     -- 5 input functions                      ; 0         ;
-;     -- 4 input functions                      ; 0         ;
-;     -- <=3 input functions                    ; 15        ;
+;     -- 7 input functions                      ; 60        ;
+;     -- 6 input functions                      ; 5         ;
+;     -- 5 input functions                      ; 12        ;
+;     -- 4 input functions                      ; 7         ;
+;     -- <=3 input functions                    ; 76        ;
 ;                                               ;           ;
 ; Combinational ALUTs by mode                   ;           ;
-;     -- normal mode                            ; 1         ;
-;     -- extended LUT mode                      ; 0         ;
-;     -- arithmetic mode                        ; 14        ;
+;     -- normal mode                            ; 55        ;
+;     -- extended LUT mode                      ; 60        ;
+;     -- arithmetic mode                        ; 45        ;
 ;     -- shared arithmetic mode                 ; 0         ;
 ;                                               ;           ;
-; Estimated ALUT/register pairs used            ; 15        ;
+; Estimated ALUT/register pairs used            ; 449       ;
 ;                                               ;           ;
-; Total registers                               ; 15        ;
-;     -- Dedicated logic registers              ; 15        ;
+; Total registers                               ; 338       ;
+;     -- Dedicated logic registers              ; 338       ;
 ;     -- I/O registers                          ; 0         ;
 ;     -- LUT_REGs                               ; 0         ;
 ;                                               ;           ;
@@ -324,469 +299,209 @@ applicable agreement for further details.
 ; I/O pins                                      ; 103       ;
 ; DSP block 18-bit elements                     ; 0         ;
 ; Maximum fan-out node                          ; clk~input ;
-; Maximum fan-out                               ; 15        ;
-; Total fan-out                                 ; 177       ;
-; Average fan-out                               ; 0.75      ;
+; Maximum fan-out                               ; 338       ;
+; Total fan-out                                 ; 1709      ;
+; Average fan-out                               ; 2.43      ;
 +-----------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                        ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name  ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------+--------------+
-; |cpu                       ; 15 (0)            ; 15 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 103  ; 0            ; |cpu                 ; work         ;
-;    |plus2:PC_plus2|        ; 14 (14)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|plus2:PC_plus2  ; work         ;
-;    |register:PC_reg|       ; 1 (1)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|register:PC_reg ; work         ;
-+----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+----------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                    ;
++----------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
+; Compilation Hierarchy Node       ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Library Name ;
++----------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
+; |cpu                             ; 160 (0)           ; 338 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 103  ; 0            ; |cpu                                       ; work         ;
+;    |adder:addr_adder|            ; 15 (15)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|adder:addr_adder                      ; work         ;
+;    |alu:alu|                     ; 15 (15)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|alu:alu                               ; work         ;
+;    |branch_enable:ben|           ; 2 (2)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|branch_enable:ben                     ; work         ;
+;    |control_rom:control_rom_blk| ; 5 (5)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|control_rom:control_rom_blk           ; work         ;
+;    |ex_mem:ex_mem_pipe|          ; 0 (0)             ; 70 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe                    ; work         ;
+;       |register:ALU_reg|         ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe|register:ALU_reg   ; work         ;
+;       |register:PC_reg|          ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe|register:PC_reg    ; work         ;
+;       |register:SR2_reg|         ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe|register:SR2_reg   ; work         ;
+;       |register:addr_reg|        ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe|register:addr_reg  ; work         ;
+;       |register:cword_reg|       ; 0 (0)             ; 7 (7)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe|register:cword_reg ; work         ;
+;       |register:dest_reg|        ; 0 (0)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|ex_mem:ex_mem_pipe|register:dest_reg  ; work         ;
+;    |gencc:GenCC|                 ; 7 (7)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|gencc:GenCC                           ; work         ;
+;    |id_ex:id_ex_pipe|            ; 0 (0)             ; 62 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe                      ; work         ;
+;       |register:PC_reg|          ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe|register:PC_reg      ; work         ;
+;       |register:SR1_reg|         ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe|register:SR1_reg     ; work         ;
+;       |register:SR2_reg|         ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe|register:SR2_reg     ; work         ;
+;       |register:adj9_reg|        ; 0 (0)             ; 9 (9)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe|register:adj9_reg    ; work         ;
+;       |register:cword_reg|       ; 0 (0)             ; 5 (5)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe|register:cword_reg   ; work         ;
+;       |register:dest_reg|        ; 0 (0)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|id_ex:id_ex_pipe|register:dest_reg    ; work         ;
+;    |if_id:if_id_pipe|            ; 0 (0)             ; 31 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|if_id:if_id_pipe                      ; work         ;
+;       |register:I_rdata|         ; 0 (0)             ; 16 (16)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|if_id:if_id_pipe|register:I_rdata     ; work         ;
+;       |register:PC_reg|          ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|if_id:if_id_pipe|register:PC_reg      ; work         ;
+;    |mem_wb:mem_wb_pipe|          ; 0 (0)             ; 37 (0)       ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mem_wb:mem_wb_pipe                    ; work         ;
+;       |register:PC_reg|          ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mem_wb:mem_wb_pipe|register:PC_reg    ; work         ;
+;       |register:addr_reg|        ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mem_wb:mem_wb_pipe|register:addr_reg  ; work         ;
+;       |register:cword_reg|       ; 0 (0)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mem_wb:mem_wb_pipe|register:cword_reg ; work         ;
+;       |register:dest_reg|        ; 0 (0)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mem_wb:mem_wb_pipe|register:dest_reg  ; work         ;
+;    |mux2:sr2_mux|                ; 3 (3)             ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mux2:sr2_mux                          ; work         ;
+;    |mux4:wdata_mux|              ; 15 (15)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mux4:wdata_mux                        ; work         ;
+;    |mux8:data_mux|               ; 15 (15)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|mux8:data_mux                         ; work         ;
+;    |plus2:PC_plus2|              ; 15 (15)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|plus2:PC_plus2                        ; work         ;
+;    |regfile:regfile_reg|         ; 68 (68)           ; 120 (120)    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|regfile:regfile_reg                   ; work         ;
+;    |register:CC|                 ; 0 (0)             ; 3 (3)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|register:CC                           ; work         ;
+;    |register:PC_reg|             ; 0 (0)             ; 15 (15)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |cpu|register:PC_reg                       ; work         ;
++----------------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+--------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                ;
-+-----------------------------------------------------+---------------------------------------------+
-; Register name                                       ; Reason for Removal                          ;
-+-----------------------------------------------------+---------------------------------------------+
-; mem_wb:mem_wb_pipe|register:cword_reg|data[2]       ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[2]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:cword_reg|data[2]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[1]       ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[1]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:cword_reg|data[1]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[0,11]    ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[11]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:cword_reg|data[11]        ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[12]      ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[12]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:cword_reg|data[12]        ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[13]      ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[13]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:cword_reg|data[13]        ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:LDB_reg|data[0..15]     ; Stuck at GND due to stuck port clock_enable ;
-; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[0..15] ; Stuck at GND due to stuck port clock_enable ;
-; mem_wb:mem_wb_pipe|register:dest_reg|data[0]        ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:dest_reg|data[0]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:dest_reg|data[0]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:dest_reg|data[1]        ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:dest_reg|data[1]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:dest_reg|data[1]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:dest_reg|data[2]        ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:dest_reg|data[2]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:dest_reg|data[2]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:addr_reg|data[0..15]    ; Stuck at GND due to stuck port clock_enable ;
-; mem_wb:mem_wb_pipe|register:ALU_reg|data[0..15]     ; Stuck at GND due to stuck port clock_enable ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[4]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[4]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[3]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[3]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[2]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[2]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[1]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[1]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[0]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[0]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[5]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[5]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[6]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[6]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[7]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[7]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[8]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[8]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[9]          ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[9]          ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[10]         ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[10]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[11]         ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[11]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[12]         ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[12]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[13]         ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[13]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[14]         ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[14]         ; Lost fanout                                 ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[15]         ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:PC_reg|data[15]         ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[3]       ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:cword_reg|data[3]         ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[0,6]     ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:cword_reg|data[6]         ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[7]       ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:cword_reg|data[7]         ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[8]       ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:cword_reg|data[8]         ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[9]       ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:cword_reg|data[9]         ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[4]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[4]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[3]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[3]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[2]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[2]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[1]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[1]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[0]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[0]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[5]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[5]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[6]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[6]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[7]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[7]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[8]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[8]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[9]   ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[9]     ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[10]  ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[10]    ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[11]  ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[11]    ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[12]  ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[12]    ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[13]  ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[13]    ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[14]  ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[14]    ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[15]  ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:trapvect8_reg|data[15]    ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:addr_reg|data[0..15]    ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:PC_reg|data[15]           ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[15]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[14]           ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[14]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[13]           ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[13]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[12]           ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[12]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[11]           ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[11]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[10]           ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[10]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[9]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[9]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[8]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[8]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[7]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[7]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[6]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[6]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[5]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[5]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[4]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[4]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[3]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[3]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[2]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[2]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[1]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[1]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:PC_reg|data[0]            ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:PC_reg|data[0]            ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[15]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[15]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[14]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[14]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[13]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[13]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[12]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[12]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[11]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[11]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[10]        ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[10]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[9]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[9]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[8]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[8]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[7]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[7]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[6]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[6]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[5]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[5]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[4]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[4]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[3]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[3]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[2]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[2]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[1]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[1]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj11_reg|data[0]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj9_reg|data[0]          ; Lost fanout                                 ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[0..15]     ; Stuck at GND due to stuck port clock_enable ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[0..15]     ; Stuck at GND due to stuck port clock_enable ;
-; id_ex:id_ex_pipe|register:SR1_reg|data[0..14]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[15]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[15]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[15]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[15]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[15]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[14]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[14]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[14]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[14]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[14]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[13]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[13]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[13]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[13]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[13]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[12]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[12]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[12]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[12]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[12]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[11]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[11]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[11]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[11]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[11]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[10]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[10]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[10]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[10]         ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[10]      ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[9]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[9]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[9]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[9]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[9]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[8]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[8]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[8]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[8]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[8]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[7]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[7]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[7]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[7]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[7]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[6]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[6]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[6]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[6]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[6]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[5]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[5]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[5]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[5]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[5]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[4]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[4]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[4]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[4]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[4]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[3]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[3]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[3]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[3]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[3]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[2]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[2]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[2]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[2]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[2]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[1]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[1]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[1]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[1]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[1]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR2_reg|data[0]           ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm4_reg|data[0]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:imm5_reg|data[0]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:adj6_reg|data[0]          ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:offset6_reg|data[0]       ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:SR1_reg|data[15]          ; Lost fanout                                 ;
-; if_id:if_id_pipe|register:I_rdata|data[0..2,6..15]  ; Lost fanout                                 ;
-; id_ex:id_ex_pipe|register:cword_reg|data[0]         ; Stuck at GND due to stuck port clock_enable ;
-; register:CC|data[0..2]                              ; Lost fanout                                 ;
-; register:PC_reg|data[0]                             ; Stuck at GND due to stuck port data_in      ;
-; Total Number of Removed Registers = 390             ;                                             ;
-+-----------------------------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                    ;
++------------------------------------------------------------+----------------------------------------------------------+
+; Register name                                              ; Reason for Removal                                       ;
++------------------------------------------------------------+----------------------------------------------------------+
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[0..15]            ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:adj11_reg|data[0..15]            ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:cword_reg|data[0,3,7..9,11,12]   ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[0,9..15]      ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:offset6_reg|data[0..15]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:adj9_reg|data[0]                 ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:adj6_reg|data[0..15]             ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:imm5_reg|data[0..15]             ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:imm4_reg|data[0..15]             ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:cword_reg|data[0,3,7..9,11,12] ; Stuck at GND due to stuck port data_in                   ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[0,9..15]    ; Stuck at GND due to stuck port data_in                   ;
+; mem_wb:mem_wb_pipe|register:cword_reg|data[0,11,12]        ; Stuck at GND due to stuck port data_in                   ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[4]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[4]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[3]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[3]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[2]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[2]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[1]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[1]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[5]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[5]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[6]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[6]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[7]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[7]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[8]          ; Lost fanout                                              ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[8]            ; Lost fanout                                              ;
+; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[0..15]        ; Lost fanout                                              ;
+; mem_wb:mem_wb_pipe|register:ALU_reg|data[0..15]            ; Lost fanout                                              ;
+; ex_mem:ex_mem_pipe|register:PC_reg|data[0]                 ; Merged with ex_mem:ex_mem_pipe|register:addr_reg|data[0] ;
+; id_ex:id_ex_pipe|register:cword_reg|data[4]                ; Merged with id_ex:id_ex_pipe|register:cword_reg|data[6]  ;
+; id_ex:id_ex_pipe|register:cword_reg|data[13]               ; Merged with id_ex:id_ex_pipe|register:cword_reg|data[5]  ;
+; id_ex:id_ex_pipe|register:adj9_reg|data[10..15]            ; Merged with id_ex:id_ex_pipe|register:adj9_reg|data[9]   ;
+; mem_wb:mem_wb_pipe|register:PC_reg|data[0]                 ; Merged with mem_wb:mem_wb_pipe|register:addr_reg|data[0] ;
+; if_id:if_id_pipe|register:PC_reg|data[0]                   ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:PC_reg|data[0]                   ; Stuck at GND due to stuck port data_in                   ;
+; ex_mem:ex_mem_pipe|register:addr_reg|data[0]               ; Stuck at GND due to stuck port data_in                   ;
+; mem_wb:mem_wb_pipe|register:addr_reg|data[0]               ; Stuck at GND due to stuck port data_in                   ;
+; register:PC_reg|data[0]                                    ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~0                                 ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~16                                ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~32                                ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~48                                ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~64                                ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~80                                ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~96                                ; Stuck at GND due to stuck port data_in                   ;
+; regfile:regfile_reg|data~112                               ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:SR2_reg|data[0]                  ; Stuck at GND due to stuck port data_in                   ;
+; ex_mem:ex_mem_pipe|register:SR2_reg|data[0]                ; Stuck at GND due to stuck port data_in                   ;
+; id_ex:id_ex_pipe|register:SR1_reg|data[0]                  ; Stuck at GND due to stuck port data_in                   ;
+; ex_mem:ex_mem_pipe|register:ALU_reg|data[0]                ; Stuck at GND due to stuck port data_in                   ;
+; Total Number of Removed Registers = 205                    ;                                                          ;
++------------------------------------------------------------+----------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                 ;
-+----------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------+
-; Register name                                      ; Reason for Removal             ; Registers Removed due to This Register                                                ;
-+----------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------+
-; mem_wb:mem_wb_pipe|register:cword_reg|data[2]      ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:cword_reg|data[2],                                        ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:cword_reg|data[2],                                          ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[15],                                           ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[14],                                           ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[13],                                           ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[12], register:CC|data[0], register:CC|data[1], ;
-;                                                    ;                                ; register:CC|data[2], register:PC_reg|data[0]                                          ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[4]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[14],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:SR1_reg|data[13],                                           ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:SR1_reg|data[12],                                           ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:SR1_reg|data[11],                                           ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:SR1_reg|data[10],                                           ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:SR1_reg|data[9],                                            ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:SR1_reg|data[4],                                            ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:imm4_reg|data[4],                                           ;
-;                                                    ;                                ; id_ex:id_ex_pipe|register:SR1_reg|data[15]                                            ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[13]        ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[13],                                          ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[13],                                            ;
-;                                                    ;                                ; if_id:if_id_pipe|register:PC_reg|data[13]                                             ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[14]        ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[14],                                          ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[14],                                            ;
-;                                                    ;                                ; if_id:if_id_pipe|register:PC_reg|data[14]                                             ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[15]        ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[15],                                          ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[15],                                            ;
-;                                                    ;                                ; if_id:if_id_pipe|register:PC_reg|data[15]                                             ;
-; mem_wb:mem_wb_pipe|register:dest_reg|data[0]       ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:dest_reg|data[0],                                         ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:dest_reg|data[0],                                           ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[9]                                             ;
-; mem_wb:mem_wb_pipe|register:dest_reg|data[1]       ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:dest_reg|data[1],                                         ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:dest_reg|data[1],                                           ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[10]                                            ;
-; mem_wb:mem_wb_pipe|register:dest_reg|data[2]       ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:dest_reg|data[2],                                         ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:dest_reg|data[2],                                           ;
-;                                                    ;                                ; if_id:if_id_pipe|register:I_rdata|data[11]                                            ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[4]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[4],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[4], if_id:if_id_pipe|register:PC_reg|data[4]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[3]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[3],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[3], if_id:if_id_pipe|register:PC_reg|data[3]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[2]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[2],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[2], if_id:if_id_pipe|register:PC_reg|data[2]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[1]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[1],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[1], if_id:if_id_pipe|register:PC_reg|data[1]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[0]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[0],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[0], if_id:if_id_pipe|register:PC_reg|data[0]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[5]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[5],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[5], if_id:if_id_pipe|register:PC_reg|data[5]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[6]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[6],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[6], if_id:if_id_pipe|register:PC_reg|data[6]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[7]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[7],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[7], if_id:if_id_pipe|register:PC_reg|data[7]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[8]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[8],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[8], if_id:if_id_pipe|register:PC_reg|data[8]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[9]         ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[9],                                           ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[9], if_id:if_id_pipe|register:PC_reg|data[9]    ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[10]        ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[10],                                          ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[10],                                            ;
-;                                                    ;                                ; if_id:if_id_pipe|register:PC_reg|data[10]                                             ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[11]        ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[11],                                          ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[11],                                            ;
-;                                                    ;                                ; if_id:if_id_pipe|register:PC_reg|data[11]                                             ;
-; mem_wb:mem_wb_pipe|register:PC_reg|data[12]        ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:PC_reg|data[12],                                          ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:PC_reg|data[12],                                            ;
-;                                                    ;                                ; if_id:if_id_pipe|register:PC_reg|data[12]                                             ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[1]      ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:cword_reg|data[1],                                        ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:cword_reg|data[1]                                           ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[11]     ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:cword_reg|data[11],                                       ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:cword_reg|data[11]                                          ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[12]     ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:cword_reg|data[12],                                       ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:cword_reg|data[12]                                          ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[6]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[6],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[6]                                            ;
-; mem_wb:mem_wb_pipe|register:cword_reg|data[13]     ; Stuck at GND                   ; ex_mem:ex_mem_pipe|register:cword_reg|data[13],                                       ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:cword_reg|data[13]                                          ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[3]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[3],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[3]                                            ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[2]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[2],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[2]                                            ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[1]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[1],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[1]                                            ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[0]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[0],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[0]                                            ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[5]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[5],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[5]                                            ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[7]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[7],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[7]                                            ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[8]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR1_reg|data[8],                                            ;
-;                                                    ; due to stuck port clock_enable ; id_ex:id_ex_pipe|register:imm4_reg|data[8]                                            ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[0]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[0]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[5]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[5]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[6]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[6]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[7]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[7]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[8]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[8]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[9]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[9]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[10] ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[10]                                      ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[11] ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[11]                                      ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[12] ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[12]                                      ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[13] ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[13]                                      ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[14] ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[14]                                      ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[15] ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[15]                                      ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[4]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[4]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[3]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[3]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[2]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[2]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[1]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[1]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[0]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[0]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[5]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[5]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[6]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[6]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[7]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[7]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[8]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[8]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[9]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[9]                                             ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[10]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[10]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[11]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[11]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[12]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[12]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[3]      ; Stuck at GND                   ; id_ex:id_ex_pipe|register:cword_reg|data[3]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[14]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[14]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[15]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[15]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[6]      ; Stuck at GND                   ; id_ex:id_ex_pipe|register:cword_reg|data[6]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[7]      ; Stuck at GND                   ; id_ex:id_ex_pipe|register:cword_reg|data[7]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[8]      ; Stuck at GND                   ; id_ex:id_ex_pipe|register:cword_reg|data[8]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:cword_reg|data[9]      ; Stuck at GND                   ; id_ex:id_ex_pipe|register:cword_reg|data[9]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[4]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[4]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[3]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[3]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:SR2_reg|data[13]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:SR2_reg|data[13]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[2]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[2]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[1]  ; Stuck at GND                   ; id_ex:id_ex_pipe|register:trapvect8_reg|data[1]                                       ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[9]        ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[9]                                            ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[10]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[10]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[11]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[11]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[12]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[12]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[13]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[13]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[14]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[14]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-; ex_mem:ex_mem_pipe|register:ALU_reg|data[15]       ; Stuck at GND                   ; id_ex:id_ex_pipe|register:imm4_reg|data[15]                                           ;
-;                                                    ; due to stuck port clock_enable ;                                                                                       ;
-+----------------------------------------------------+--------------------------------+---------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                        ;
++--------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; Register name                                    ; Reason for Removal        ; Registers Removed due to This Register                                              ;
++--------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
+; id_ex:id_ex_pipe|register:cword_reg|data[3]      ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:cword_reg|data[3],                                      ;
+;                                                  ; due to stuck port data_in ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[4],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[4],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[3],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[3],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[2],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[2],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[1],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[1],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[5],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[5],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[6],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[6],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[7],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[7],                                    ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[8],                                  ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:trapvect8_reg|data[8]                                     ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[4]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[4],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[0],                                    ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:ALU_reg|data[4],                                        ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:ALU_reg|data[2],                                        ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:ALU_reg|data[1],                                        ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:ALU_reg|data[0],                                        ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:ALU_reg|data[13],                                       ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:ALU_reg|data[14],                                       ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:SR1_reg|data[0]                                           ;
+; mem_wb:mem_wb_pipe|register:cword_reg|data[0]    ; Stuck at GND              ; if_id:if_id_pipe|register:PC_reg|data[0], id_ex:id_ex_pipe|register:PC_reg|data[0], ;
+;                                                  ; due to stuck port data_in ; ex_mem:ex_mem_pipe|register:addr_reg|data[0],                                       ;
+;                                                  ;                           ; mem_wb:mem_wb_pipe|register:addr_reg|data[0], register:PC_reg|data[0],              ;
+;                                                  ;                           ; id_ex:id_ex_pipe|register:SR2_reg|data[0],                                          ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:SR2_reg|data[0],                                        ;
+;                                                  ;                           ; ex_mem:ex_mem_pipe|register:ALU_reg|data[0]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[3]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[3],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[3]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[5]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[5],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[5]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[6]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[6],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[6]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[7]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[7],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[7]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[8]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[8],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[8]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[9]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[9],                                    ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[9]                                         ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[10]     ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[10],                                   ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[10]                                        ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[11]     ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[11],                                   ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[11]                                        ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[12]     ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[12],                                   ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[12]                                        ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[15]     ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[15],                                   ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:ALU_reg|data[15]                                        ;
+; id_ex:id_ex_pipe|register:cword_reg|data[11]     ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:cword_reg|data[11],                                     ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:cword_reg|data[11]                                      ;
+; id_ex:id_ex_pipe|register:cword_reg|data[12]     ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:cword_reg|data[12],                                     ;
+;                                                  ; due to stuck port data_in ; mem_wb:mem_wb_pipe|register:cword_reg|data[12]                                      ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[2]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[2]                                     ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[1]      ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[1]                                     ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[13]     ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[13]                                    ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; mem_wb:mem_wb_pipe|register:LDB_reg|data[14]     ; Stuck at GND              ; mem_wb:mem_wb_pipe|register:d_rdata_reg|data[14]                                    ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:cword_reg|data[7]      ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:cword_reg|data[7]                                       ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:cword_reg|data[8]      ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:cword_reg|data[8]                                       ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:cword_reg|data[9]      ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:cword_reg|data[9]                                       ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[0]  ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[0]                                   ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[9]  ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[9]                                   ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[10] ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[10]                                  ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[11] ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[11]                                  ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[12] ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[12]                                  ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[13] ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[13]                                  ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[14] ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[14]                                  ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
+; id_ex:id_ex_pipe|register:trapvect8_reg|data[15] ; Stuck at GND              ; ex_mem:ex_mem_pipe|register:trapvect8_reg|data[15]                                  ;
+;                                                  ; due to stuck port data_in ;                                                                                     ;
++--------------------------------------------------+---------------------------+-------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -794,12 +509,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 15    ;
+; Total registers                              ; 338   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 15    ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 120   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -989,7 +704,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+---------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                    ;
 +----------------+-------+---------------------------------------------------------+
-; width          ; 16    ; Signed Integer                                          ;
+; width          ; 31    ; Signed Integer                                          ;
 +----------------+-------+---------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1089,7 +804,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; width          ; 16    ; Signed Integer                                            ;
+; width          ; 31    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1199,7 +914,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-------+-----------------------------------------------------------+
 ; Parameter Name ; Value ; Type                                                      ;
 +----------------+-------+-----------------------------------------------------------+
-; width          ; 16    ; Signed Integer                                            ;
+; width          ; 31    ; Signed Integer                                            ;
 +----------------+-------+-----------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1243,14 +958,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------+-------+----------+-------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "mux2:dest_mux"                                                                                                                              ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port ; Type  ; Severity ; Details                                                                                                                                      ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
-; b    ; Input ; Info     ; Stuck at VCC                                                                                                                                 ;
-; sel  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
-+------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------+
+; Port Connectivity Checks: "mux2:dest_mux" ;
++------+-------+----------+-----------------+
+; Port ; Type  ; Severity ; Details         ;
++------+-------+----------+-----------------+
+; b    ; Input ; Info     ; Stuck at VCC    ;
++------+-------+----------+-----------------+
 
 
 +-------------------------------------------+
@@ -1264,67 +978,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+-----------------+
 
 
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:cword_reg" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                  ;
-+------+-------+----------+-----------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:LDB_reg" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:d_rdata_reg" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                    ;
-+------+-------+----------+-------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:dest_reg" ;
-+------+-------+----------+----------------------------------------+
-; Port ; Type  ; Severity ; Details                                ;
-+------+-------+----------+----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                 ;
-+------+-------+----------+----------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:addr_reg" ;
-+------+-------+----------+----------------------------------------+
-; Port ; Type  ; Severity ; Details                                ;
-+------+-------+----------+----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                 ;
-+------+-------+----------+----------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:ALU_reg" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:PC_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "mem_wb:mem_wb_pipe|register:cword_reg"                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; in[30..16]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out[30..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------+
@@ -1332,9 +993,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port                  ; Type   ; Severity ; Details                                                                             ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
-; SR2_reg_out           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; cword_reg_out[15..14] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; cword_reg_out[10..3]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cword_reg_out[9..3]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +-----------------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -1365,67 +1025,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+-------+----------+------------------+
 
 
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:cword_reg" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                  ;
-+------+-------+----------+-----------------------------------------+
-
-
-+-----------------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:trapvect8_reg" ;
-+------+-------+----------+---------------------------------------------+
-; Port ; Type  ; Severity ; Details                                     ;
-+------+-------+----------+---------------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                      ;
-+------+-------+----------+---------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:dest_reg" ;
-+------+-------+----------+----------------------------------------+
-; Port ; Type  ; Severity ; Details                                ;
-+------+-------+----------+----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                 ;
-+------+-------+----------+----------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:addr_reg" ;
-+------+-------+----------+----------------------------------------+
-; Port ; Type  ; Severity ; Details                                ;
-+------+-------+----------+----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                 ;
-+------+-------+----------+----------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:SR2_reg" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:ALU_reg" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:PC_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "ex_mem:ex_mem_pipe|register:cword_reg"                                                     ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; in[30..16]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out[30..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +---------------------------------------------+
@@ -1458,112 +1065,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+-------+----------+--------------+
 
 
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:cword_reg" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
-+---------------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:trapvect8_reg" ;
-+------+-------+----------+-------------------------------------------+
-; Port ; Type  ; Severity ; Details                                   ;
-+------+-------+----------+-------------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                    ;
-+------+-------+----------+-------------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:dest_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
-
-
-+-------------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:offset6_reg" ;
-+------+-------+----------+-----------------------------------------+
-; Port ; Type  ; Severity ; Details                                 ;
-+------+-------+----------+-----------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                  ;
-+------+-------+----------+-----------------------------------------+
-
-
-+-----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:adj11_reg" ;
-+------+-------+----------+---------------------------------------+
-; Port ; Type  ; Severity ; Details                               ;
-+------+-------+----------+---------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected                ;
-+------+-------+----------+---------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:adj9_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:adj6_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:imm5_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
-
-
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:imm4_reg" ;
-+------+-------+----------+--------------------------------------+
-; Port ; Type  ; Severity ; Details                              ;
-+------+-------+----------+--------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected               ;
-+------+-------+----------+--------------------------------------+
-
-
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:SR2_reg" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected              ;
-+------+-------+----------+-------------------------------------+
-
-
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:SR1_reg" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected              ;
-+------+-------+----------+-------------------------------------+
-
-
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "id_ex:id_ex_pipe|register:PC_reg" ;
-+------+-------+----------+------------------------------------+
-; Port ; Type  ; Severity ; Details                            ;
-+------+-------+----------+------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected             ;
-+------+-------+----------+------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "id_ex:id_ex_pipe|register:cword_reg"                                                       ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; in[30..16]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; out[30..16] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -1603,24 +1112,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+---------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "if_id:if_id_pipe|register:I_rdata" ;
-+------+-------+----------+-------------------------------------+
-; Port ; Type  ; Severity ; Details                             ;
-+------+-------+----------+-------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected              ;
-+------+-------+----------+-------------------------------------+
-
-
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "if_id:if_id_pipe|register:PC_reg" ;
-+------+-------+----------+------------------------------------+
-; Port ; Type  ; Severity ; Details                            ;
-+------+-------+----------+------------------------------------+
-; load ; Input ; Info     ; Explicitly unconnected             ;
-+------+-------+----------+------------------------------------+
-
-
 +-----------------------------------------+
 ; Port Connectivity Checks: "mux4:PC_mux" ;
 +------+-------+----------+---------------+
@@ -1654,7 +1145,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.1.4 Build 182 03/12/2014 SJ Full Version
-    Info: Processing started: Sat Oct 21 19:11:10 2017
+    Info: Processing started: Sun Oct 22 13:26:42 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mp3 -c mp3
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file magic_dual_port.sv
@@ -1710,11 +1201,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file br_enab
 Info (12021): Found 1 design units, including 1 entities, in source file masturgate.sv
     Info (12023): Found entity 1: masturgate
 Info (12127): Elaborating entity "cpu" for the top level hierarchy
-Warning (10034): Output port "pmem_address_a" at cpu.sv(10) has no driver
-Warning (10034): Output port "pmem_read_a" at cpu.sv(8) has no driver
-Warning (10034): Output port "pmem_write_a" at cpu.sv(9) has no driver
-Warning (10034): Output port "pmem_read_b" at cpu.sv(15) has no driver
-Warning (10034): Output port "pmem_write_b" at cpu.sv(16) has no driver
 Info (12128): Elaborating entity "masturgate" for hierarchy "masturgate:master_gater"
 Info (12128): Elaborating entity "register" for hierarchy "register:PC_reg"
 Info (12128): Elaborating entity "plus2" for hierarchy "plus2:PC_plus2"
@@ -1723,18 +1209,11 @@ Info (12128): Elaborating entity "if_id" for hierarchy "if_id:if_id_pipe"
 Info (12128): Elaborating entity "regfile" for hierarchy "regfile:regfile_reg"
 Info (12128): Elaborating entity "mux2" for hierarchy "mux2:sr1_mux"
 Info (12128): Elaborating entity "shift_ext" for hierarchy "shift_ext:shift_ext_blk"
-Warning (10034): Output port "adj6_out" at shift_ext.sv(7) has no driver
-Warning (10034): Output port "adj9_out" at shift_ext.sv(7) has no driver
-Warning (10034): Output port "adj11_out" at shift_ext.sv(7) has no driver
-Warning (10034): Output port "offset6_out" at shift_ext.sv(7) has no driver
-Warning (10034): Output port "trapvect8_out" at shift_ext.sv(7) has no driver
-Warning (10034): Output port "imm5_out" at shift_ext.sv(7) has no driver
-Warning (10034): Output port "imm4_out" at shift_ext.sv(8) has no driver
 Info (12128): Elaborating entity "control_rom" for hierarchy "control_rom:control_rom_blk"
-Info (10041): Inferred latch for "ctrl.stall" at control_rom.sv(14)
 Info (10041): Inferred latch for "ctrl.load_regfile" at control_rom.sv(14)
 Info (12128): Elaborating entity "id_ex" for hierarchy "id_ex:id_ex_pipe"
 Info (12128): Elaborating entity "register" for hierarchy "id_ex:id_ex_pipe|register:dest_reg"
+Info (12128): Elaborating entity "register" for hierarchy "id_ex:id_ex_pipe|register:cword_reg"
 Info (12128): Elaborating entity "alu" for hierarchy "alu:alu"
 Info (12128): Elaborating entity "mux8" for hierarchy "mux8:alu_mux"
 Info (12128): Elaborating entity "adder" for hierarchy "adder:addr_adder"
@@ -1745,88 +1224,41 @@ Info (12128): Elaborating entity "ldb_shift" for hierarchy "ldb_shift:ldb_shift_
 Warning (10034): Output port "out" at ldb_shift.sv(8) has no driver
 Info (12128): Elaborating entity "register" for hierarchy "register:ldi_count"
 Info (12128): Elaborating entity "mem_wb" for hierarchy "mem_wb:mem_wb_pipe"
-Warning (10034): Output port "SR2_reg_out" at mem_wb.sv(12) has no driver
 Info (12128): Elaborating entity "mux2" for hierarchy "mux2:dest_mux"
 Info (12128): Elaborating entity "gencc" for hierarchy "gencc:GenCC"
 Info (12128): Elaborating entity "nzp_comp" for hierarchy "nzp_comp:cccomp"
 Info (12128): Elaborating entity "branch_enable" for hierarchy "branch_enable:ben"
-Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (276014): Found 1 instances of uninferred RAM logic
+    Info (276006): RAM logic "regfile:regfile_reg|data" is uninferred due to "logic" being set as ramstyle synthesis attribute
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "pmem_read_a" is stuck at GND
+    Warning (13410): Pin "pmem_read_a" is stuck at VCC
     Warning (13410): Pin "pmem_write_a" is stuck at GND
     Warning (13410): Pin "pmem_address_a[0]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[1]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[2]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[3]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[4]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[5]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[6]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[7]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[8]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[9]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[10]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[11]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[12]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[13]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[14]" is stuck at GND
-    Warning (13410): Pin "pmem_address_a[15]" is stuck at GND
     Warning (13410): Pin "pmem_wdata_a[0]" is stuck at GND
-    Warning (13410): Pin "pmem_read_b" is stuck at GND
-    Warning (13410): Pin "pmem_write_b" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[1]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[2]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[3]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[4]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[5]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[6]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[7]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[8]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[9]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[10]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[11]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[12]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[13]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[14]" is stuck at GND
+    Warning (13410): Pin "pmem_wdata_a[15]" is stuck at GND
     Warning (13410): Pin "pmem_address_b[0]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[1]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[2]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[3]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[4]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[5]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[6]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[7]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[8]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[9]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[10]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[11]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[12]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[13]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[14]" is stuck at GND
-    Warning (13410): Pin "pmem_address_b[15]" is stuck at GND
     Warning (13410): Pin "pmem_wdata_b[0]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[1]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[2]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[3]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[4]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[5]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[6]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[7]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[8]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[9]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[10]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[11]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[12]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[13]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[14]" is stuck at GND
-    Warning (13410): Pin "pmem_wdata_b[15]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 229 registers lost all their fanouts during netlist optimizations.
+Info (17049): 128 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 34 input pin(s) that do not drive logic
+Warning (21074): Design contains 18 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "pmem_resp_a"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[0]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[1]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[2]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[3]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[4]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[5]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[6]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[7]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[8]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[9]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[10]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[11]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[12]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[13]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[14]"
-    Warning (15610): No output dependent on input pin "pmem_rdata_a[15]"
     Warning (15610): No output dependent on input pin "pmem_resp_b"
     Warning (15610): No output dependent on input pin "pmem_rdata_b[0]"
     Warning (15610): No output dependent on input pin "pmem_rdata_b[1]"
@@ -1844,13 +1276,13 @@ Warning (21074): Design contains 34 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "pmem_rdata_b[13]"
     Warning (15610): No output dependent on input pin "pmem_rdata_b[14]"
     Warning (15610): No output dependent on input pin "pmem_rdata_b[15]"
-Info (21057): Implemented 118 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 519 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 35 input pins
     Info (21059): Implemented 68 output pins
-    Info (21061): Implemented 15 logic cells
-Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 105 warnings
-    Info: Peak virtual memory: 448 megabytes
-    Info: Processing ended: Sat Oct 21 19:11:13 2017
+    Info (21061): Implemented 416 logic cells
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 44 warnings
+    Info: Peak virtual memory: 445 megabytes
+    Info: Processing ended: Sun Oct 22 13:26:45 2017
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 

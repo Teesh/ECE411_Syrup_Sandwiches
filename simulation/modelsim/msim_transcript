@@ -1,4 +1,5 @@
-# do mp2_run_msim_rtl_verilog.do 
+# ERROR: No extended dataflow license exists
+# do mp3_run_msim_rtl_verilog.do 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -9,51 +10,89 @@
 # ** Warning: Copied /software/altera/13.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/lc3b_types.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/lc3b_types.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package lc3b_types
 # 
 # Top level modules:
 # 	--none--
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/plus2.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/plus2.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module plus2
 # 
 # Top level modules:
 # 	plus2
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/register.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/register.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module register
 # 
 # Top level modules:
 # 	register
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/adder.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/adder.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/mux2.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/mux2.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux2
 # 
 # Top level modules:
 # 	mux2
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/mux4.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/mux4.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux4
 # 
 # Top level modules:
 # 	mux4
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/cache_control.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/shift_ext.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package cache_control_sv_unit
+# -- Compiling package shift_ext_sv_unit
 # -- Importing package lc3b_types
-# -- Compiling module cache_control
+# -- Compiling module shift_ext
 # 
 # Top level modules:
-# 	cache_control
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/alu.sv}
+# 	shift_ext
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/mux8.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module mux8
+# 
+# Top level modules:
+# 	mux8
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/ldb_shift.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package ldb_shift_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module ldb_shift
+# 
+# Top level modules:
+# 	ldb_shift
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/stb_shift.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package stb_shift_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module stb_shift
+# 
+# Top level modules:
+# 	stb_shift
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/br_enable.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package br_enable_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module branch_enable
+# 
+# Top level modules:
+# 	branch_enable
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/masturgate.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling package masturgate_sv_unit
+# -- Importing package lc3b_types
+# -- Compiling module masturgate
+# 
+# Top level modules:
+# 	masturgate
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/alu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package alu_sv_unit
 # -- Importing package lc3b_types
@@ -61,7 +100,7 @@
 # 
 # Top level modules:
 # 	alu
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/gencc.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/gencc.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package gencc_sv_unit
 # -- Importing package lc3b_types
@@ -69,15 +108,7 @@
 # 
 # Top level modules:
 # 	gencc
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/ir.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package ir_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module ir
-# 
-# Top level modules:
-# 	ir
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/regfile.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/regfile.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package regfile_sv_unit
 # -- Importing package lc3b_types
@@ -85,7 +116,7 @@
 # 
 # Top level modules:
 # 	regfile
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/nzp_comp.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/nzp_comp.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package nzp_comp_sv_unit
 # -- Importing package lc3b_types
@@ -93,105 +124,47 @@
 # 
 # Top level modules:
 # 	nzp_comp
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/mask.sv}
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/if_id.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package mask_sv_unit
+# -- Compiling package if_id_sv_unit
 # -- Importing package lc3b_types
-# -- Compiling module mask
+# -- Compiling module if_id
 # 
 # Top level modules:
-# 	mask
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/mask2.sv}
+# 	if_id
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/id_ex.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package mask2_sv_unit
+# -- Compiling package id_ex_sv_unit
 # -- Importing package lc3b_types
-# -- Compiling module mask2
+# -- Compiling module id_ex
 # 
 # Top level modules:
-# 	mask2
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/cpu_control.sv}
+# 	id_ex
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/ex_mem.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# ** Warning: /home/shahi2/ece411/mp2/cpu_control.sv(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-# -- Compiling package cpu_control_sv_unit
+# -- Compiling package ex_mem_sv_unit
 # -- Importing package lc3b_types
-# -- Compiling module cpu_control
-# ** Warning: /home/shahi2/ece411/mp2/cpu_control.sv(84): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling module ex_mem
 # 
 # Top level modules:
-# 	cpu_control
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/array.sv}
+# 	ex_mem
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/mem_wb.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package array_sv_unit
+# -- Compiling package mem_wb_sv_unit
 # -- Importing package lc3b_types
-# -- Compiling module array
+# -- Compiling module mem_wb
 # 
 # Top level modules:
-# 	array
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/ryte_byte.sv}
+# 	mem_wb
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/control_rom.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package ryte_byte_sv_unit
+# -- Compiling package control_rom_sv_unit
 # -- Importing package lc3b_types
-# -- Compiling module ryte_byte
+# -- Compiling module control_rom
 # 
 # Top level modules:
-# 	ryte_byte
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/add_ress.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package add_ress_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module add_ress
-# 
-# Top level modules:
-# 	add_ress
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/our_data.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package our_data_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module our_data
-# 
-# Top level modules:
-# 	our_data
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/comp_tag.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package comp_tag_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module comp_tag
-# 
-# Top level modules:
-# 	comp_tag
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/shift.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package shift_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module shift
-# 
-# Top level modules:
-# 	shift
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/cache_datapath.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package cache_datapath_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module cache_datapath
-# 
-# Top level modules:
-# 	cache_datapath
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/cpu_datapath.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package cpu_datapath_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module cpu_datapath
-# 
-# Top level modules:
-# 	cpu_datapath
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/cache.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package cache_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module cache
-# 
-# Top level modules:
-# 	cache
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/cpu.sv}
+# 	control_rom
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/cpu.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling package cpu_sv_unit
 # -- Importing package lc3b_types
@@ -199,83 +172,125 @@
 # 
 # Top level modules:
 # 	cpu
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/mp2.sv}
+# 
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/mp3_tb.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling package mp2_sv_unit
-# -- Importing package lc3b_types
-# -- Compiling module mp2
+# -- Compiling module mp3_tb
 # 
 # Top level modules:
-# 	mp2
-# 
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/mp2_tb.sv}
+# 	mp3_tb
+# vlog -sv -work work +incdir+/home/bdamisc2/ece411/mp3 {/home/bdamisc2/ece411/mp3/magic_dual_port.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module mp2_tb
+# -- Compiling module magic_memory_dp
 # 
 # Top level modules:
-# 	mp2_tb
-# vlog -sv -work work +incdir+/home/shahi2/ece411/mp2 {/home/shahi2/ece411/mp2/physical_memory.sv}
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module physical_memory
+# 	magic_memory_dp
 # 
-# Top level modules:
-# 	physical_memory
-# 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  mp2_tb
-# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mp2_tb 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs="+acc"  mp3_tb
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L stratixiii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps mp3_tb 
 # Loading sv_std.std
-# Loading work.mp2_tb
+# Loading work.mp3_tb
 # Loading work.lc3b_types
-# Loading work.mp2_sv_unit
-# Loading work.mp2
 # Loading work.cpu_sv_unit
 # Loading work.cpu
-# Loading work.cpu_control_sv_unit
-# Loading work.cpu_control
-# Loading work.cpu_datapath_sv_unit
-# Loading work.cpu_datapath
+# Loading work.masturgate_sv_unit
+# Loading work.masturgate
 # Loading work.register
-# Loading work.nzp_comp_sv_unit
-# Loading work.nzp_comp
-# Loading work.gencc_sv_unit
-# Loading work.gencc
 # Loading work.plus2
-# Loading work.adder
-# Loading work.shift_sv_unit
-# Loading work.shift
-# Loading work.alu_sv_unit
-# Loading work.alu
-# Loading work.ir_sv_unit
-# Loading work.ir
+# Loading work.mux4
+# Loading work.if_id_sv_unit
+# Loading work.if_id
 # Loading work.regfile_sv_unit
 # Loading work.regfile
 # Loading work.mux2
-# Loading work.mux4
-# Loading work.mask_sv_unit
-# Loading work.mask
-# Loading work.mask2_sv_unit
-# Loading work.mask2
-# Loading work.cache_sv_unit
-# Loading work.cache
-# Loading work.cache_control_sv_unit
-# Loading work.cache_control
-# Loading work.cache_datapath_sv_unit
-# Loading work.cache_datapath
-# Loading work.array_sv_unit
-# Loading work.array
-# Loading work.ryte_byte_sv_unit
-# Loading work.ryte_byte
-# Loading work.add_ress_sv_unit
-# Loading work.add_ress
-# Loading work.our_data_sv_unit
-# Loading work.our_data
-# Loading work.comp_tag_sv_unit
-# Loading work.comp_tag
-# Loading work.physical_memory
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(233): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag0
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(240): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag1
+# Loading work.shift_ext_sv_unit
+# Loading work.shift_ext
+# Loading work.control_rom_sv_unit
+# Loading work.control_rom
+# Loading work.id_ex_sv_unit
+# Loading work.id_ex
+# Loading work.alu_sv_unit
+# Loading work.alu
+# Loading work.mux8
+# Loading work.adder
+# Loading work.ex_mem_sv_unit
+# Loading work.ex_mem
+# Loading work.stb_shift_sv_unit
+# Loading work.stb_shift
+# Loading work.ldb_shift_sv_unit
+# Loading work.ldb_shift
+# Loading work.mem_wb_sv_unit
+# Loading work.mem_wb
+# Loading work.gencc_sv_unit
+# Loading work.gencc
+# Loading work.nzp_comp_sv_unit
+# Loading work.nzp_comp
+# Loading work.br_enable_sv_unit
+# Loading work.branch_enable
+# Loading work.magic_memory_dp
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(7).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(10).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(11).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(14).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(17).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(18).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3017) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /mp3_tb/dut/master_gater
+# ** Warning: (vsim-3722) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Missing connection for port 'e'.
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(16).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(22).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(8).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(14).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(8).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(14).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(15).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(16).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(18).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(24).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(25).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(27).
+#         Region: /mp3_tb/caches
 # 
 # add wave *
 # view structure
@@ -283,298 +298,353 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 200 ns
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-do mp31.do
-restart -f; run 100000ns
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux8.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux8.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/regfile_reg/data
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/id_ex_pipe/PC_reg_out
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/id_ex_pipe/cword_reg_out
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/if_id_pipe/PC_reg_out
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/ex_mem_pipe/PC_reg_out
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/ex_mem_pipe/cword_reg_out
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/mem_wb_pipe/PC_reg_out
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/mem_wb_pipe/cword_reg_out
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/bdamisc2/ece411/mp3/simulation/modelsim/mp3.do
+restart -f; run 50000ns
 # Loading sv_std.std
-# Loading work.mp2_tb
+# Loading work.mp3_tb
 # Loading work.lc3b_types
-# Loading work.mp2_sv_unit
-# Loading work.mp2
 # Loading work.cpu_sv_unit
 # Loading work.cpu
-# Loading work.cpu_control_sv_unit
-# Loading work.cpu_control
-# Loading work.cpu_datapath_sv_unit
-# Loading work.cpu_datapath
+# Loading work.masturgate_sv_unit
+# Loading work.masturgate
 # Loading work.register
-# Loading work.nzp_comp_sv_unit
-# Loading work.nzp_comp
-# Loading work.gencc_sv_unit
-# Loading work.gencc
 # Loading work.plus2
-# Loading work.adder
-# Loading work.shift_sv_unit
-# Loading work.shift
-# Loading work.alu_sv_unit
-# Loading work.alu
-# Loading work.ir_sv_unit
-# Loading work.ir
+# Loading work.mux4
+# Loading work.if_id_sv_unit
+# Loading work.if_id
 # Loading work.regfile_sv_unit
 # Loading work.regfile
 # Loading work.mux2
-# Loading work.mux4
-# Loading work.mask_sv_unit
-# Loading work.mask
-# Loading work.mask2_sv_unit
-# Loading work.mask2
-# Loading work.cache_sv_unit
-# Loading work.cache
-# Loading work.cache_control_sv_unit
-# Loading work.cache_control
-# Loading work.cache_datapath_sv_unit
-# Loading work.cache_datapath
-# Loading work.array_sv_unit
-# Loading work.array
-# Loading work.ryte_byte_sv_unit
-# Loading work.ryte_byte
-# Loading work.add_ress_sv_unit
-# Loading work.add_ress
-# Loading work.our_data_sv_unit
-# Loading work.our_data
-# Loading work.comp_tag_sv_unit
-# Loading work.comp_tag
-# Loading work.physical_memory
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(233): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag0
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(240): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag1
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-add wave -position 0  sim:/mp2_tb/dut/mp2_cache/datapath/data1/data
-add wave -position 1  sim:/mp2_tb/dut/mp2_cache/datapath/tag1/data
-restart -f; run 100000ns
-# Loading sv_std.std
-# Loading work.mp2_tb
-# Loading work.lc3b_types
-# Loading work.mp2_sv_unit
-# Loading work.mp2
-# Loading work.cpu_sv_unit
-# Loading work.cpu
-# Loading work.cpu_control_sv_unit
-# Loading work.cpu_control
-# Loading work.cpu_datapath_sv_unit
-# Loading work.cpu_datapath
-# Loading work.register
-# Loading work.nzp_comp_sv_unit
-# Loading work.nzp_comp
-# Loading work.gencc_sv_unit
-# Loading work.gencc
-# Loading work.plus2
-# Loading work.adder
-# Loading work.shift_sv_unit
-# Loading work.shift
+# Loading work.shift_ext_sv_unit
+# Loading work.shift_ext
+# Loading work.control_rom_sv_unit
+# Loading work.control_rom
+# Loading work.id_ex_sv_unit
+# Loading work.id_ex
 # Loading work.alu_sv_unit
 # Loading work.alu
-# Loading work.ir_sv_unit
-# Loading work.ir
+# Loading work.mux8
+# Loading work.adder
+# Loading work.ex_mem_sv_unit
+# Loading work.ex_mem
+# Loading work.stb_shift_sv_unit
+# Loading work.stb_shift
+# Loading work.ldb_shift_sv_unit
+# Loading work.ldb_shift
+# Loading work.mem_wb_sv_unit
+# Loading work.mem_wb
+# Loading work.gencc_sv_unit
+# Loading work.gencc
+# Loading work.nzp_comp_sv_unit
+# Loading work.nzp_comp
+# Loading work.br_enable_sv_unit
+# Loading work.branch_enable
+# Loading work.magic_memory_dp
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(7).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(10).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(11).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(14).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(17).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(18).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3017) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /mp3_tb/dut/master_gater
+# ** Warning: (vsim-3722) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Missing connection for port 'e'.
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(16).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(22).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(8).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(14).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(8).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(14).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(15).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(16).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(18).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(24).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(25).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(27).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux8.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux8.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+add wave -position insertpoint  \
+sim:/mp3_tb/dut/if_id_pipe/I_rdata_out
+restart -f; 10000ns
+# Loading sv_std.std
+# Loading work.mp3_tb
+# Loading work.lc3b_types
+# Loading work.cpu_sv_unit
+# Loading work.cpu
+# Loading work.masturgate_sv_unit
+# Loading work.masturgate
+# Loading work.register
+# Loading work.plus2
+# Loading work.mux4
+# Loading work.if_id_sv_unit
+# Loading work.if_id
 # Loading work.regfile_sv_unit
 # Loading work.regfile
 # Loading work.mux2
-# Loading work.mux4
-# Loading work.mask_sv_unit
-# Loading work.mask
-# Loading work.mask2_sv_unit
-# Loading work.mask2
-# Loading work.cache_sv_unit
-# Loading work.cache
-# Loading work.cache_control_sv_unit
-# Loading work.cache_control
-# Loading work.cache_datapath_sv_unit
-# Loading work.cache_datapath
-# Loading work.array_sv_unit
-# Loading work.array
-# Loading work.ryte_byte_sv_unit
-# Loading work.ryte_byte
-# Loading work.add_ress_sv_unit
-# Loading work.add_ress
-# Loading work.our_data_sv_unit
-# Loading work.our_data
-# Loading work.comp_tag_sv_unit
-# Loading work.comp_tag
-# Loading work.physical_memory
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(233): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag0
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(240): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag1
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-add wave -position 0  sim:/mp2_tb/dut/mp2_cache/datapath/data0/data
-add wave -position 1  sim:/mp2_tb/dut/mp2_cache/datapath/tag0/data
-add wave -position end  sim:/mp2_tb/dut/clk
-do wave.do
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/dut/datapath_block/PC/data'.
-# Executing ONERROR command at macro ./wave.do line 4
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/dut/control_block/opcode'.
-# Executing ONERROR command at macro ./wave.do line 5
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_resp'.
-# Executing ONERROR command at macro ./wave.do line 6
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_read'.
-# Executing ONERROR command at macro ./wave.do line 7
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_write'.
-# Executing ONERROR command at macro ./wave.do line 8
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_byte_enable'.
-# Executing ONERROR command at macro ./wave.do line 9
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_address'.
-# Executing ONERROR command at macro ./wave.do line 10
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_rdata'.
-# Executing ONERROR command at macro ./wave.do line 11
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/mem_wdata'.
-# Executing ONERROR command at macro ./wave.do line 12
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/dut/control_block/state'.
-# Executing ONERROR command at macro ./wave.do line 13
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/dut/control_block/next_state'.
-# Executing ONERROR command at macro ./wave.do line 14
-# ** Error: (vish-4014) No objects found matching '/mp2_tb/dut/datapath_block/regfile_reg/data'.
-# Executing ONERROR command at macro ./wave.do line 15
-do mp2.sft
-# ModelSim-Altera (SystemVerilog)
-# 
-# 	{{"Slow -2 1.1V 85 Model"} {mp2_2_1100mv_85c_slow.svo mp2_2_1100mv_85c_v_slow.sdo}}
-# 	{{"Slow -2 1.1V 0 Model"} {mp2_2_1100mv_0c_slow.svo mp2_2_1100mv_0c_v_slow.sdo}}
-# 	{{"Fast -M 1.1V 0 Model"} {mp2_min_1100mv_0c_fast.svo mp2_min_1100mv_0c_v_fast.sdo}}
-# 
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/datapath/PC/out
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/mem_address
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/mem_read
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/mem_rdata
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/mem_write
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/mem_byte_enable
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/mem_wdata
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/datapath/regfile_reg/data
-add wave -position end  sim:/mp2_tb/dut/mp2_cpu/control/state
-restart -f; run 100000ns\
-
-
-# Loading sv_std.std
-# Loading work.mp2_tb
-# Loading work.lc3b_types
-# Loading work.mp2_sv_unit
-# Loading work.mp2
-# Loading work.cpu_sv_unit
-# Loading work.cpu
-# Loading work.cpu_control_sv_unit
-# Loading work.cpu_control
-# Loading work.cpu_datapath_sv_unit
-# Loading work.cpu_datapath
-# Loading work.register
-# Loading work.nzp_comp_sv_unit
-# Loading work.nzp_comp
-# Loading work.gencc_sv_unit
-# Loading work.gencc
-# Loading work.plus2
-# Loading work.adder
-# Loading work.shift_sv_unit
-# Loading work.shift
+# Loading work.shift_ext_sv_unit
+# Loading work.shift_ext
+# Loading work.control_rom_sv_unit
+# Loading work.control_rom
+# Loading work.id_ex_sv_unit
+# Loading work.id_ex
 # Loading work.alu_sv_unit
 # Loading work.alu
-# Loading work.ir_sv_unit
-# Loading work.ir
+# Loading work.mux8
+# Loading work.adder
+# Loading work.ex_mem_sv_unit
+# Loading work.ex_mem
+# Loading work.stb_shift_sv_unit
+# Loading work.stb_shift
+# Loading work.ldb_shift_sv_unit
+# Loading work.ldb_shift
+# Loading work.mem_wb_sv_unit
+# Loading work.mem_wb
+# Loading work.gencc_sv_unit
+# Loading work.gencc
+# Loading work.nzp_comp_sv_unit
+# Loading work.nzp_comp
+# Loading work.br_enable_sv_unit
+# Loading work.branch_enable
+# Loading work.magic_memory_dp
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(7).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(10).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(11).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(14).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(17).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(18).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3017) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /mp3_tb/dut/master_gater
+# ** Warning: (vsim-3722) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Missing connection for port 'e'.
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(16).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(22).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(8).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(14).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(8).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(14).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(15).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(16).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(18).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(24).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(25).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(27).
+#         Region: /mp3_tb/caches
+# invalid command name "10000ns"
+restart -f; run 10000ns
+# Loading sv_std.std
+# Loading work.mp3_tb
+# Loading work.lc3b_types
+# Loading work.cpu_sv_unit
+# Loading work.cpu
+# Loading work.masturgate_sv_unit
+# Loading work.masturgate
+# Loading work.register
+# Loading work.plus2
+# Loading work.mux4
+# Loading work.if_id_sv_unit
+# Loading work.if_id
 # Loading work.regfile_sv_unit
 # Loading work.regfile
 # Loading work.mux2
-# Loading work.mux4
-# Loading work.mask_sv_unit
-# Loading work.mask
-# Loading work.mask2_sv_unit
-# Loading work.mask2
-# Loading work.cache_sv_unit
-# Loading work.cache
-# Loading work.cache_control_sv_unit
-# Loading work.cache_control
-# Loading work.cache_datapath_sv_unit
-# Loading work.cache_datapath
-# Loading work.array_sv_unit
-# Loading work.array
-# Loading work.ryte_byte_sv_unit
-# Loading work.ryte_byte
-# Loading work.add_ress_sv_unit
-# Loading work.add_ress
-# Loading work.our_data_sv_unit
-# Loading work.our_data
-# Loading work.comp_tag_sv_unit
-# Loading work.comp_tag
-# Loading work.physical_memory
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(233): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag0
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(240): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag1
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data0/data
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/tag0/data
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data1/clk
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data1/load
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data1/index
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data1/in
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data1/out
-add wave -position end  sim:/mp2_tb/dut/mp2_cache/datapath/data1/data
-add wave -position 1  sim:/mp2_tb/dut/mp2_cache/datapath/tag1/data
-restart -f; run 100000ns\
-
-
-# Loading sv_std.std
-# Loading work.mp2_tb
-# Loading work.lc3b_types
-# Loading work.mp2_sv_unit
-# Loading work.mp2
-# Loading work.cpu_sv_unit
-# Loading work.cpu
-# Loading work.cpu_control_sv_unit
-# Loading work.cpu_control
-# Loading work.cpu_datapath_sv_unit
-# Loading work.cpu_datapath
-# Loading work.register
-# Loading work.nzp_comp_sv_unit
-# Loading work.nzp_comp
-# Loading work.gencc_sv_unit
-# Loading work.gencc
-# Loading work.plus2
-# Loading work.adder
-# Loading work.shift_sv_unit
-# Loading work.shift
+# Loading work.shift_ext_sv_unit
+# Loading work.shift_ext
+# Loading work.control_rom_sv_unit
+# Loading work.control_rom
+# Loading work.id_ex_sv_unit
+# Loading work.id_ex
 # Loading work.alu_sv_unit
 # Loading work.alu
-# Loading work.ir_sv_unit
-# Loading work.ir
-# Loading work.regfile_sv_unit
-# Loading work.regfile
-# Loading work.mux2
-# Loading work.mux4
-# Loading work.mask_sv_unit
-# Loading work.mask
-# Loading work.mask2_sv_unit
-# Loading work.mask2
-# Loading work.cache_sv_unit
-# Loading work.cache
-# Loading work.cache_control_sv_unit
-# Loading work.cache_control
-# Loading work.cache_datapath_sv_unit
-# Loading work.cache_datapath
-# Loading work.array_sv_unit
-# Loading work.array
-# Loading work.ryte_byte_sv_unit
-# Loading work.ryte_byte
-# Loading work.add_ress_sv_unit
-# Loading work.add_ress
-# Loading work.our_data_sv_unit
-# Loading work.our_data
-# Loading work.comp_tag_sv_unit
-# Loading work.comp_tag
-# Loading work.physical_memory
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(233): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag0
-# ** Warning: (vsim-3015) /home/shahi2/ece411/mp2/cache_datapath.sv(240): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'out'. The port definition is at: /home/shahi2/ece411/mp2/comp_tag.sv(7).
-#         Region: /mp2_tb/dut/mp2_cache/datapath/comp_tag1
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-# ** Warning: (vsim-8315) /home/shahi2/ece411/mp2/mux4.sv(10): No condition is true in the unique/priority if/case statement.
-write list -window .main_pane.list.interior.cs.body /home/shahi2/ece411/mp2/simulation/modelsim/list.lst
-write list -window .main_pane.list.interior.cs.body /home/shahi2/ece411/mp2/simulation/modelsim/list.lst
-write list -window .main_pane.list.interior.cs.body /home/shahi2/ece411/mp2/simulation/modelsim/list.lst
-write list -window .main_pane.list.interior.cs.body /home/shahi2/ece411/list.lst
+# Loading work.mux8
+# Loading work.adder
+# Loading work.ex_mem_sv_unit
+# Loading work.ex_mem
+# Loading work.stb_shift_sv_unit
+# Loading work.stb_shift
+# Loading work.ldb_shift_sv_unit
+# Loading work.ldb_shift
+# Loading work.mem_wb_sv_unit
+# Loading work.mem_wb
+# Loading work.gencc_sv_unit
+# Loading work.gencc
+# Loading work.nzp_comp_sv_unit
+# Loading work.nzp_comp
+# Loading work.br_enable_sv_unit
+# Loading work.branch_enable
+# Loading work.magic_memory_dp
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(7).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(10).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(11).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(14).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(17).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(45): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'pmem_wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/cpu.sv(18).
+#         Region: /mp3_tb/dut
+# ** Warning: (vsim-3017) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Too few port connections. Expected 6, found 5.
+#         Region: /mp3_tb/dut/master_gater
+# ** Warning: (vsim-3722) /home/bdamisc2/ece411/mp3/cpu.sv(111): [TFMPC] - Missing connection for port 'e'.
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(180): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr1_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'a'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'b'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(4).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(188): [PCDPC] - Port size (16 or 16) does not match connection size (3) for port 'f'. The port definition is at: /home/bdamisc2/ece411/mp3/mux2.sv(5).
+#         Region: /mp3_tb/dut/sr2_mux
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(16).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(242): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/id_ex.sv(22).
+#         Region: /mp3_tb/dut/id_ex_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/id_ex.sv(122): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/id_ex_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(8).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(307): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/ex_mem.sv(14).
+#         Region: /mp3_tb/dut/ex_mem_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/ex_mem.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/ex_mem_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_in'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(8).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/cpu.sv(386): [PCDPC] - Port size (16 or 16) does not match connection size (32) for port 'cword_reg_out'. The port definition is at: /home/bdamisc2/ece411/mp3/mem_wb.sv(14).
+#         Region: /mp3_tb/dut/mem_wb_pipe
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'in'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(5).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mem_wb.sv(73): [PCDPC] - Port size (31 or 31) does not match connection size (16) for port 'out'. The port definition is at: /home/bdamisc2/ece411/mp3/register.sv(6).
+#         Region: /mp3_tb/dut/mem_wb_pipe/cword_reg
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(15).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(16).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_a'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(18).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'address_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(24).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'wdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(25).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-3015) /home/bdamisc2/ece411/mp3/mp3_tb.sv(66): [PCDPC] - Port size (16 or 16) does not match connection size (1) for port 'rdata_b'. The port definition is at: /home/bdamisc2/ece411/mp3/magic_dual_port.sv(27).
+#         Region: /mp3_tb/caches
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux8.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux8.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.
+# ** Warning: (vsim-8315) /home/bdamisc2/ece411/mp3/mux4.sv(10): No condition is true in the unique/priority if/case statement.

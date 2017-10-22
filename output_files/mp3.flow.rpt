@@ -1,5 +1,5 @@
 Flow report for mp3
-Sat Oct 21 19:11:13 2017
+Sun Oct 22 13:26:45 2017
 Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Full Version
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+
 ; Flow Summary                                                                ;
 +-------------------------------+---------------------------------------------+
-; Flow Status                   ; Successful - Sat Oct 21 19:11:13 2017       ;
+; Flow Status                   ; Successful - Sun Oct 22 13:26:45 2017       ;
 ; Quartus II 32-bit Version     ; 13.1.4 Build 182 03/12/2014 SJ Full Version ;
 ; Revision Name                 ; mp3                                         ;
 ; Top-level Entity Name         ; cpu                                         ;
@@ -48,10 +48,10 @@ applicable agreement for further details.
 ; Device                        ; EP3SE50F780C2                               ;
 ; Timing Models                 ; Final                                       ;
 ; Logic utilization             ; N/A                                         ;
-;     Combinational ALUTs       ; 15                                          ;
+;     Combinational ALUTs       ; 160                                         ;
 ;     Memory ALUTs              ; 0                                           ;
-;     Dedicated logic registers ; 15                                          ;
-; Total registers               ; 15                                          ;
+;     Dedicated logic registers ; 338                                         ;
+; Total registers               ; 338                                         ;
 ; Total pins                    ; 103                                         ;
 ; Total virtual pins            ; 0                                           ;
 ; Total block memory bits       ; 0                                           ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/21/2017 19:11:11 ;
+; Start date & time ; 10/22/2017 13:26:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; mp3                 ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 176831339119262.150863107129636       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 176831339118710.150869680228019       ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; mp3_tb         ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; mp3_tb                                ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                     ; --            ; --          ; eda_simulation ;
@@ -107,8 +107,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 444 MB              ; 00:00:01                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 440 MB              ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -117,7 +117,7 @@ applicable agreement for further details.
 +----------------------+------------------------------+--------------+--------------+----------------+
 ; Module Name          ; Machine Hostname             ; OS Name      ; OS Version   ; Processor type ;
 +----------------------+------------------------------+--------------+--------------+----------------+
-; Analysis & Synthesis ; dcl-l440-18.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
+; Analysis & Synthesis ; dcl-l440-25.ews.illinois.edu ; CentOS Linux ; CentOS Linux ; x86_64         ;
 +----------------------+------------------------------+--------------+--------------+----------------+
 
 

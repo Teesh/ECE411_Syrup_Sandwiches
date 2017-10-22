@@ -59,7 +59,6 @@ lc3b_control_word cword_wb;
 logic [15:0] sr1_execute;
 logic [15:0] sr2_execute;
 logic [15:0] sr2_mem;
-logic [15:0] sr2_wb;
 
 logic [2:0] dest_execute;
 logic [2:0] dest_mem;
@@ -96,6 +95,12 @@ logic enable;
 logic load;
 
 
+assign pmem_wdata_a = 16'h0000;
+assign pmem_read_a = load;
+assign pmem_write_a = 1'b0;
+assign pmem_read_b = cword_mem.d_cache_read;
+assign pmem_write_b = cword_mem.d_cache_write;
+
 masturgate master_gater
 (
 	.a(cword_decode.stall),
@@ -116,13 +121,13 @@ register PC_reg
 	.clk,
 	.load(load),
 	.in(PC_mux_out),
-	.out(pmem_wdata_a)
+	.out(pmem_address_a)
 	
 );
 
 plus2 PC_plus2
 (
-	.in(pmem_wdata_a),
+	.in(pmem_address_a),
 	.out(plus2_out)
 );
 
@@ -139,7 +144,8 @@ mux4 PC_mux
 if_id if_id_pipe
 (
 	.clk,
-	.PC_reg_in(pmem_wdata_a),
+	.load(load),
+	.PC_reg_in(pmem_address_a),
 	.PC_reg_out(PC_reg_decode),
 	.I_rdata_in(pmem_rdata_a),
 	.I_rdata_out(i_rdata_out)
@@ -207,7 +213,7 @@ control_rom control_rom_blk
 id_ex id_ex_pipe
 (
 	.clk,
-	
+	.load(load),
 	.PC_reg_in(PC_reg_decode),
 	.SR1_reg_in(reg_a_out),
 	.SR2_reg_in(reg_b_out),
@@ -282,7 +288,7 @@ mux2 offset_mux
 ex_mem ex_mem_pipe
 (
 	.clk,
-	
+	.load(load),
 	.PC_reg_in(PC_reg_execute),
 	.SR2_reg_in(sr2_execute),
 	.ALU_reg_in(alu_out),
@@ -361,8 +367,8 @@ register #(.width(1)) ldi_count
 mem_wb mem_wb_pipe
 (
 	.clk,
+	.load(load),
 	.PC_reg_in(PC_reg_mem),
-	.SR2_reg_in(sr2_mem),
 	.ALU_reg_in(alu_mem),
 	.dest_reg_in(dest_mem),
 	.cword_reg_in(cword_mem),
@@ -371,7 +377,6 @@ mem_wb mem_wb_pipe
 	.ldb_shift_reg_in(ldb_shift_mem),
 	
 	.PC_reg_out(PC_reg_wb),
-	.SR2_reg_out(sr2_wb),
 	.ALU_reg_out(alu_reg_out),
 	.dest_reg_out(dest_wb),
 	.cword_reg_out(cword_wb),
@@ -403,6 +408,7 @@ mux8 data_mux
 
 mux2 #(.width(3)) dest_mux
 (
+	.sel(cword_wb.dest_mux_sel),
 	.a(dest_wb),
 	.b({3'b111}),
 	.f(dest_mux_out)

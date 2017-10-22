@@ -2,7 +2,9 @@ import lc3b_types::*;
 
 module id_ex
 (
-	input clk,/*
+	input clk,
+	input load,
+	/*
 	input logic PC_reg_ld, SR1_reg_ld, SR2_reg_ld, 
 					imm4_reg_ld, imm5_reg_ld, adj6_reg_ld, 
 					adj9_reg_ld, adj11_reg_ld, offset6_reg_ld, 
@@ -26,7 +28,7 @@ module id_ex
 register PC_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(PC_reg_in),
 	.out(PC_reg_out)
 );
@@ -34,7 +36,7 @@ register PC_reg
 register SR1_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(SR1_reg_in),
 	.out(SR1_reg_out)
 );
@@ -42,7 +44,7 @@ register SR1_reg
 register SR2_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(SR2_reg_in),
 	.out(SR2_reg_out)
 );
@@ -50,7 +52,7 @@ register SR2_reg
 register imm4_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(imm4_reg_in),
 	.out(imm4_reg_out)
 );
@@ -58,7 +60,7 @@ register imm4_reg
 register imm5_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(imm5_reg_in),
 	.out(imm5_reg_out)
 );
@@ -66,7 +68,7 @@ register imm5_reg
 register adj6_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(adj6_reg_in),
 	.out(adj6_reg_out)
 );
@@ -74,7 +76,7 @@ register adj6_reg
 register adj9_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(adj9_reg_in),
 	.out(adj9_reg_out)
 );
@@ -82,7 +84,7 @@ register adj9_reg
 register adj11_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(adj11_reg_in),
 	.out(adj11_reg_out)
 );
@@ -90,7 +92,7 @@ register adj11_reg
 register offset6_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(offset6_reg_in),
 	.out(offset6_reg_out)
 );
@@ -98,7 +100,7 @@ register offset6_reg
 register #(.width(3)) dest_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(dest_reg_in),
 	.out(dest_reg_out)
 );
@@ -106,15 +108,15 @@ register #(.width(3)) dest_reg
 register trapvect8_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(trapvect8_reg_in),
 	.out(trapvect8_reg_out)
 );
 
-register cword_reg
+register #(.width(31)) cword_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(cword_reg_in),
 	.out(cword_reg_out)
 );

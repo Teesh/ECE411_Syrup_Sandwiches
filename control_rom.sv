@@ -28,6 +28,7 @@ begin
 	ctrl.ldi_mux_sel = 1'b0;
 	ctrl.br_code = 1'b0;
 	ctrl.reg_load = 1'b0;
+	ctrl.stall = 1'b0;
 	
 	/* Assign control signals based on opcode */
 	case(opcode)
