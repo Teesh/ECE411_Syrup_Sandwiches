@@ -2,7 +2,7 @@ import lc3b_types::*;
 
 module mp3
 (
-    input clk,
+    input logic clk,
 	 
 	 input pmem_resp,
     input mem_bus pmem_rdata,

@@ -26,7 +26,9 @@ logic [15:0] PC_reg_decode;
 logic [15:0] PC_reg_execute;
 logic [15:0] PC_reg_mem;
 logic [15:0] PC_reg_wb;
+
 logic [15:0] i_rdata_out;
+
 logic [2:0] sr1_mux_out;
 logic [2:0] sr2_mux_out;
 logic [15:0] reg_a_out;
@@ -49,14 +51,15 @@ logic [15:0] imm5_execute;
 logic [15:0] imm4_execute;
 logic [15:0] trapvect8_mem;
 
-logic [15:0] cword_decode;
-logic [15:0] cword_execute;
-logic [15:0] cword_mem;
-logic [15:0] cword_wb;
+lc3b_control_word cword_decode;
+lc3b_control_word cword_execute;
+lc3b_control_word cword_mem;
+lc3b_control_word cword_wb;
 
 logic [15:0] sr1_execute;
 logic [15:0] sr2_execute;
 logic [15:0] sr2_mem;
+logic [15:0] sr2_wb;
 
 logic [2:0] dest_execute;
 logic [2:0] dest_mem;
@@ -86,7 +89,21 @@ logic ldi_count_out;
 logic [2:0] genCC_out;
 logic [2:0] cc_reg_out;
 
+logic [15:0] d_rdata_wb;
 
+logic [1:0] pc_mux_sel;
+logic enable;
+logic load;
+
+
+masturgate master_gater
+(
+	.a(cword_decode.stall),
+	.b(cword_execute.stall),
+	.c(cword_mem.stall),
+	.d(cword_wb.stall),
+	.load(load)
+);
 /*
  *		FETCH
  *		All modules for segment
@@ -97,7 +114,7 @@ logic [2:0] cc_reg_out;
 register PC_reg
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(PC_mux_out),
 	.out(pmem_wdata_a)
 	
@@ -111,18 +128,18 @@ plus2 PC_plus2
 
 mux4 PC_mux
 (
-	.sel(),
+	.sel(pc_mux_sel),
 	.a(plus2_out),
 	.b(addr_reg_out),
 	.c(alu_reg_out),
-	.d(),
+	.d(16'h0000),
 	.f(PC_mux_out)
 );
 
 if_id if_id_pipe
 (
 	.clk,
-	.PC_reg_in(),
+	.PC_reg_in(pmem_wdata_a),
 	.PC_reg_out(PC_reg_decode),
 	.I_rdata_in(pmem_rdata_a),
 	.I_rdata_out(i_rdata_out)
@@ -139,7 +156,7 @@ if_id if_id_pipe
 regfile regfile_reg
 (
 	.clk,
-	.load(),
+	.load(load & cword_wb.reg_load),
 	.in(data_mux_out),
 	.src_a(sr1_mux_out),
 	.src_b(sr2_mux_out),
@@ -150,7 +167,7 @@ regfile regfile_reg
 
 mux2 sr1_mux
 (
-	.sel(),
+	.sel(cword_decode.sr1_mux_sel),
 	.a(i_rdata_out[8:6]),
 	.b(i_rdata_out[11:9]),
 	.f(sr1_mux_out)
@@ -158,7 +175,7 @@ mux2 sr1_mux
 
 mux2 sr2_mux
 (
-	.sel(),
+	.sel(cword_decode.sr2_mux_sel),
 	.a(i_rdata_out[2:0]),
 	.b(i_rdata_out[11:9]),
 	.f(sr2_mux_out)
@@ -179,7 +196,7 @@ shift_ext shift_ext_blk
 
 control_rom control_rom_blk
 (
-   .opcode(i_rdata_out[15:12]),
+   .opcode(lc3b_opcode'(i_rdata_out[15:12])), //cast
 	.bit11(i_rdata_out[11]),
 	.bit5(i_rdata_out[5]),
 	.bit4(i_rdata_out[4]),
@@ -227,7 +244,7 @@ id_ex id_ex_pipe
 
 alu alu
 (
-	.aluop(),
+	.aluop(cword_execute.aluop),
    .a(sr1_execute), 
 	.b(alu_mux_out),
    .f(alu_out)
@@ -235,28 +252,28 @@ alu alu
 
 mux8 alu_mux
 (
-	.sel(),
+	.sel(cword_execute.alu_mux_sel),
 	.a(sr2_execute),
 	.b(imm4_execute),
 	.c(imm5_execute),
 	.d(adj6_execute),
 	.e(offset6_execute),
-	.f(),
-	.g(),
-	.h(),
+	.f(16'h0000),
+	.g(16'h0000),
+	.h(16'h0000),
 	.z(alu_mux_out)
 );
 
 adder addr_adder
 (
-	.a(pc_execute),
+	.a(PC_reg_execute),
 	.b(offset_mux_out),
 	.out(adder_out)
 );
 
 mux2 offset_mux
 (
-	.sel(),
+	.sel(cword_execute.offset_mux_sel),
 	.a(adj9_execute),
 	.b(adj11_execute),
 	.f(offset_mux_out)
@@ -270,7 +287,7 @@ ex_mem ex_mem_pipe
 	.SR2_reg_in(sr2_execute),
 	.ALU_reg_in(alu_out),
 	.dest_reg_in(dest_execute),
-	.trapvect8_reg_in(trapvect_execute),
+	.trapvect8_reg_in(trapvect8_execute),
 	.cword_reg_in(cword_execute),
 	.addr_reg_in(adder_out),
 	
@@ -278,7 +295,7 @@ ex_mem ex_mem_pipe
 	.SR2_reg_out(sr2_mem),
 	.ALU_reg_out(alu_mem),
 	.dest_reg_out(dest_mem),
-	.trapvect8_reg_out(trapvect_mem),
+	.trapvect8_reg_out(trapvect8_mem),
 	.cword_reg_out(cword_mem),
 	.addr_reg_out(addr_mem)
 );
@@ -299,22 +316,22 @@ stb_shift stb_shift_blk
 
 mux4 wdata_mux
 (
-	.sel(),
+	.sel(cword_mem.wdata_mux_sel),
 	.a(stb_shift_out),
 	.b(sr2_mem),
 	.c(alu_mem),
-	.d(),
+	.d(16'h0000),
 	.f(pmem_wdata_b)
 	
 );
 
 mux4 addr_mux
 (
-	.sel(),
+	.sel(cword_mem.addr_mux_sel),
 	.a(alu_mem),
 	.b(addr_mem),
 	.c(trapvect8_mem),
-	.d(),
+	.d(16'h0000),
 	.f(addr_mux_out)
 );
 
@@ -327,7 +344,7 @@ ldb_shift ldb_shift_blk
 
 mux2 ldi_mux
 (
-	.sel(),
+	.sel(cword_mem.ldi_mux_sel),
 	.a(addr_mux_out),
 	.b(pmem_rdata_b),
 	.f(pmem_address_b)
@@ -336,7 +353,7 @@ mux2 ldi_mux
 register #(.width(1)) ldi_count
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(pmem_resp_b),
 	.out(ldi_count_out)
 );
@@ -372,15 +389,15 @@ mem_wb mem_wb_pipe
 
 mux8 data_mux
 (
-	.sel(),
+	.sel(cword_wb.data_mux_sel),
 	.a(PC_reg_wb),
 	.b(alu_reg_out),
 	.c(ldb_shift_wb),
 	.d(d_rdata_wb),
 	.e(addr_reg_out),
-	.f(),
-	.g(),
-	.h(),
+	.f(16'h0000),
+	.g(16'h0000),
+	.h(16'h0000),
 	.z(data_mux_out)
 );
 
@@ -400,7 +417,7 @@ gencc GenCC
 register #(.width(3)) CC
 (
 	.clk,
-	.load(),
+	.load(load),
 	.in(genCC_out),
 	.out(cc_reg_out)
 	
@@ -410,8 +427,16 @@ nzp_comp cccomp
 (
 	.a(cc_reg_out),
 	.b(dest_wb),
-	.en()
+	.en(enable)
 	
+);
+
+branch_enable ben
+(
+	.br_taken(enable),
+	.br_sel(cword_wb.pc_mux_sel),
+	.br_code(cword_wb.br_code),
+	.pc_mux_sel(pc_mux_sel)
 );
 
 endmodule : cpu

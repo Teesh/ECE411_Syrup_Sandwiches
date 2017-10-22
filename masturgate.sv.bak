@@ -1,0 +1,5 @@
+import lc3b_types::*;
+module masturgate
+(
+);
+endmodule : masturgate

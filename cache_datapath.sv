@@ -2,7 +2,7 @@ import lc3b_types::*;
 
 module cache_datapath
 (
-	input clk,
+	input logic clk,
 	output logic lru_out,
 	output logic d_out,
 	input lru_in,

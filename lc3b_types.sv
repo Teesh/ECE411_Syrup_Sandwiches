@@ -15,14 +15,29 @@ typedef logic  [1:0] lc3b_mem_wmask;
 
 typedef logic	[127:0] mem_bus;
 
-typedef logic [15:0] lc3b_control_word;
-
 typedef struct packed {
 	lc3b_opcode opcode;
 	lc3b_aluop aluop;
 	logic load_cc;
 	logic load_regfile;
+	
 	/* ... other signals ... */
+	logic [2:0] alu_mux_sel;
+	logic offset_mux_sel;
+	logic [1:0] pc_mux_sel;
+	logic sr1_mux_sel;
+	logic sr2_mux_sel;
+	logic [2:0] data_mux_sel;
+	logic dest_mux_sel;
+	logic [1:0] addr_mux_sel;
+	logic [1:0] wdata_mux_sel;
+	logic d_cache_read;
+	logic d_cache_write;
+	logic ldi_mux_sel;
+	logic br_code;
+	logic reg_load;
+	logic stall;
+
 } lc3b_control_word;
 
 typedef enum bit [3:0] {

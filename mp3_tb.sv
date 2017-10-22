@@ -4,8 +4,19 @@ timeunit 1ns;
 timeprecision 1ns;
 
 logic clk;
-logic pmem_resp;
-logic pmem_read;
+logic pmem_resp_a;
+logic pmem_resp_b;
+logic pmem_read_a;
+logic pmem_read_b;
+logic pmem_write_a;
+logic pmem_write_b;
+logic pmem_wdata_a;
+logic pmem_wdata_b;
+logic pmem_rdata_a;
+logic pmem_rdata_b;
+logic pmem_address_a;
+logic pmem_address_b;
+
 logic pmem_write;
 logic [15:0] pmem_address;
 logic [127:0] pmem_rdata;
@@ -30,7 +41,7 @@ cpu dut
     .pmem_read_b(pmem_read_b),
     .pmem_write_b(pmem_write_b),
     .pmem_address_b(pmem_address_b),
-    .pmem_wdata_b(pmem_wdata_b),
+    .pmem_wdata_b(pmem_wdata_b)
 );
 
 magic_memory_dp caches

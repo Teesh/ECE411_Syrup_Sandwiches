@@ -2,7 +2,7 @@ import lc3b_types::*;
 
 module cache
 (
-	input clk,
+	input logic clk,
 	input pmem_resp,
 	output logic pmem_read,
 	output logic pmem_write,
@@ -45,7 +45,7 @@ logic addr_mux_sel;
 
 cache_control control
 (
-	.clk,
+	.clk(clk),
 	.pmem_resp(pmem_resp),
 	.mem_resp(mem_resp),
 	.mem_read(mem_read),
@@ -81,7 +81,7 @@ cache_control control
 
 cache_datapath datapath
 (
-	.clk,
+	.clk(clk),
 	.lru_out(lru_out),
 	.d_out(d_out),
 	.lru_in(lru_in),

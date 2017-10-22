@@ -1,0 +1,12 @@
+import lc3b_types::*
+module branch_enable
+(
+	input logic br_taken,
+	input logic br_code
+);
+always_comb
+begin
+
+end
+
+endmodule : branch_enable
